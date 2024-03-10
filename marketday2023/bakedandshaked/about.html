@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Baked & Shaked</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://kit.fontawesome.com/1fb51cad3a.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moirai+One&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+    
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src ="img/BandS-logoT.png" alt="Picture of Baked & Shaked brand logo, a light brown circle with two darker brown squiggles on top, and the characters B & S in the foreground in various colours of pink."></a>
+            <div class="nav-links" id="navLinks">
+                
+                <div class="xmark"><i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i></div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="product.html">SHAKES</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="location.html">LOCATION</a></li>
+                    </ul>
+            </div>
+            <div class="bars"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+            
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    
+<!-- Abous us content -->
+<section class="about">
+   <p>We are Baked & Shaked. We are Year 10 Economics students from Wellington Girls College who are passionate about our love for milkshakes and baked goods. We decided to combine our love for milkshakes and baked goods to produce our bakery style milkshakes.</p>
+
+    <div class="row">
+        <div class="about-col">
+            <img src="aboutimg/sparrow-aboutus.jpg" alt="Picture of Sparrow feeding a giraffe">
+            <h3>Sparrow</h3>
+            <p>Hi, I am Sparrow and I am the Marketing Manager for Baked & Shaked. I was born in Hawke's Bay and have lived in New Zealand ever since. I love to play floorball and I also do Kungfu. One of my favourite drinks is milkshakes.
+</p>
+        </div>
+        <div class="about-col">
+            <img src="aboutimg/Rei-aboutus2.jpeg" alt="Picture of Rei holding up the peace sign with both hands smiling">
+            <h3>Rei</h3>
+            <p>Hi my name is Rei, and I am the Record Keeper for Baked & Shaked. I am originally from Japan and have travelled to New Zealand this year. My hobbies include listening to Kpop and I also love to eat.
+</p>
+        </div>
+         <div class="about-col">
+            <img src="aboutimg/xuanyu-aboutus.png" alt="Picture of Xuanyu with her hands in her pocket smiling">
+            <h3>Xuanyu</h3>
+            <p>Hello, I'm Xuanyu, and I am the Production Manager for Baked & Shaked. I was born in China and have come to Wellington Girls College this year. I like to skateboard and I also like to eat.
+</p>
+        </div>
+    </div>
+
+    <div class="row2">
+        <div class="about-col">
+            <img src="aboutimg/ngan-aboutus.jpg" alt="Picture of Ngan smiling">
+            <h3>Ngan</h3>
+            <p>Hello, my name is Ngan and I am the Finance Manager for Baked & Shaked. I am originally from Vietnam and have come to New Zealand this year. I like to listen to V-Pop (Vietnamese pop), and I love to eat food, especially brownies.
+</p>
+        </div>
+        <div class="about-col">
+            <img src="aboutimg/queenie-aboutus.jpg" alt="Picture of Queenie holding up the peace sign smiling">
+            <h3>Queenie</h3>
+            <p>My name is Queenie, and I am in charge of Communications for Baked & Shaked. I have come to New Zealand this year from China. I enjoy eating and playing the piano.
+</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+    <section class="footer">
+        <h2>Baked & Shaked</h2>
+        <div class="icons">
+            <p>Contact<a href="https://www.instagram.com/baked_and_shaked_wgc/?hl=en" target="_blank" class="insta"><i class="fa-brands fa-instagram"></i></a></p>
+        </div>
+            <p><i class="fa-regular fa-copyright"></i> 2023 by Baked & Shaked. Created using replit.com</p  
+    </section>
+
+
+<!-- Javscript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
