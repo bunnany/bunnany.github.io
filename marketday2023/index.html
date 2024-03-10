@@ -1,1 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WGC Market Day</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Lunasima&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="img/wgc_logo_small.png" width="75" alt="the Wellington Girls' College logo">
+        <h2>WGC Commerce Department Presents</h2>
+        <h1 id="title">Year 10 Market Day</h1>
+        <p>He waka eke noa</p>
+        <nav>
+            <div id="navbar">
+            <a href="index.html" class="open">Index</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div class="ad left">
+    </div>
+    <div class="ad right">
+    </div>
+
+
+    <main>
+        <div class="pagetop">
+            <h1>Index</h1>
+            <p id="countdown"></p>
+        </div>
+            <button type="button" class="collapsible">
+                Icon Meanings
+            </button>
+            <div class="content">
+                <ul>
+                    <li><img src="img/vegan_icon.png" alt="vegan"> Stall has vegan (and dairy free/vegetarian) options</li>
+                    <li><img src="img/vege_icon.png" alt="vegetarian"> Stall has vegetarian options</li>
+                    <li><img src="img/dairy_icon.png" alt="dairy free"> Stall has dairy free options</li>
+                    <li><img src="img/gluten_icon.png" alt="gluten free"> Stall has gluten free options</li>
+                </ul>
+            
+        </div>
+        <!--stall template - duplicate as needed (40? times)-->
+        <section>
+            
+            <div class="stall">
+                    <div class="stall top">
+                        <img src="img/naander_logo.png" width="75" alt="A logo of a clam surrounded by the words 'Naander the Sea' on a blue background">
+                        <h2>Naander the Sea</h2>
+                    </div>
+                    <p class="sites"><a href="https://naander-the-sea.2023-11dt.repl.co" target="_blank">Website</a></p>
+                    <p>Naan stuffed with garlic butter and a potato curry (optional), served in a colourful boat. Paywave and Eftpos available!</p>
+                    <div class="tags">
+                        <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                    </div>
+            </div>
+            
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/baked_logo.png" width="75" alt="A logo of the letters B & S on a chocolate drizzle">
+                    <h2>Baked & Shaked</h2>
+                </div>
+                <p class="sites"><a href="https://bakedandshaked.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://baked-n-shake-a.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Baker style milkshakes with a variety of toppings such as brownies and cookies.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                    <img src="img/gluten_icon.png" width="15" alt="Gluten free">
+                </div>
+            </div>
+
+            <!--
+            
+            <div class="stall">
+                    <div class="stall top">
+                        <img src="img/chilli_logo.png" width="75" alt="A logo of a sweating dog in a hot dog bun">
+                        <h2>Lucy and Lucia's Chilli Dogs</h2>
+                    </div>
+                    <p class="sites"><a href="https://9188091884-te-mihingamihin.2023-11dt.repl.co" target="_blank">Website</a></p>
+                    <p>American hot dogs injected with chilli sauce. Comes with toppings.</p>
+            </div>
+            -->
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/cones_logo.png" width="75" alt="A logo of a traffic cone with sushi on top">
+                    <h2>Sushi Cones</h2>
+                </div>
+                <p class="sites"><a href="https://sushi-cones.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Cone shaped sushi in teriyaki chicken or vegetable flavours.</p>
+                <div class="tags">
+                    <img src="img/vegan_icon.png" width="15" alt="Vegan">
+                </div>
+            </div>
+
+            <div class="stall">
+                    <div class="stall top">
+                        <img src="img/spring_logo.png" width="75" alt="A logo of a cupcake">
+                        <h2>Spring Cakes</h2>
+                    </div>
+                    <p class="sites"><a href="https://spring-cakes.2023-11dt.repl.co/" target="_blank">Website</a></p>
+                    <p>Spring themed cupcakes with vanilla or chocolate base.</p>
+                    <div class="tags">
+                        <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                    </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/sliders_logo.png" width="75" alt="A logo of a a burger with the earth for buns">
+                    <h2>Saucy Sliders</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-millieabernethy.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Burger sliders inspired by international cuisine. Hot off the barbecue.</p>
+                <div class="tags">
+                </div>
+            </div>
+            
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/dookies_logo.png" width="75" alt="A logo of an ice cream sandwich with pink text saying 'Dookies' underneath">
+                    <h2>Do-okies</h2>
+                </div>
+                <p class="sites"><a href="https://do-okies.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://9188091884-sydneyliu5.2023-11dt.repl.co" target="_blank">Website B</a> • <a href="https://cookie.2023-11dt.repl.co" target="_blank">Website C</a></p>
+                <p>A cookie ice cream sandwich shaped like a donut.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/bears_logo.png" width="75" alt="A logo of 2 bear themed cupcakes">
+                    <h2>The Two Bears</h2>
+                </div>
+                <p class="sites"><a href="https://the-two-bears.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Your next beary friend. Brown bear and polar bear cupcakes.</p>
+            </div>
+            
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/4seasons_logo.png" width="75" alt="A logo that says '4 seasons cupcakes' with 4 season icons">
+                    <h2>4 Seasons Cupcakes</h2>
+                </div>
+                <p class="sites"><a href="https://seasonal-cupcakesweb.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://4seasonscupcakes.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Cupcakes themed around the seasons. Lemon, apple spice, chocolate caramel and spring berry!</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                    <img src="img/gluten_icon.png" width="15" alt="Gluten free">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/churro_logo.png" width="75" alt="A logo of a storm cloud on a red background">
+                    <h2>Churro Storms</h2>
+                </div>
+                <p class="sites"><a href="https://churro-storms.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Loaded churro storms in chocolate flood and caramel quake.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/stargaze_logo.png" width="75" alt="A logo of a silver star on a navy background">
+                    <h2>Stargaze Dumplings</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-taranomnouri1.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Star shaped dumplings with either pork or vege filling.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/constructor_logo.png" width="75" alt="A logo of a tractor with cookies for wheels">
+                    <h2>Cookie Constructors</h2>
+                </div>
+                <p class="sites"><a href="https://cookie-constructors.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Building delight, one bite at a time. Edible cookie dough with toppings.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/cosmic_logo.png" width="75" alt="A logo of 3 heart shaped fry bread pieces">
+                    <h2>Cosmic Crust</h2>
+                </div>
+                <p class="sites"><a href="https://cosmic-crusts.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Fry bread in 3 flavours. A golden brown dough, light and fluffy on the inside and crispy on the outside, served hot and fresh!</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/sinn_logo.png" width="75" alt="A logo of a cinnamon bun">
+                    <h2>Sinnamonify</h2>
+                </div>
+                <p class="sites"><a href="https://sinnamonify.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Cinnamon bun shaped like a snake, both savoury and sweet.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/prosp_logo.png" width="75" alt="A logo of a yellow moon with dumplings in front of it">
+                    <h2>Prosperity Dumplings</h2>
+                </div>
+                <p class="sites"><a href="https://prosperity-dumplings.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Dumplings in 2 flavours -- vegetarian or chicken and corn.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/jelly_logo.png" width="75" alt="A logo of a bear on a pool floatie wearing sunglasses">
+                    <h2>Jelly Paws</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-fatimaahsan.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Jelly cups with blueberry jelly, crumbled biscuit, gummy rings, and cookie bears.</p>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/sundough_logo.png" width="75" alt="A logo of a cookie with rays coming from the edges">
+                    <h2>Sundough</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-rachelgammon.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://sundoughs.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Cookie dough balls in 4 flavours that correspond to your zodiac sign.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/ball_logo.png" width="75" alt="A logo of a basketball that says 'Cake Ballers' underneath">
+                    <h2>Baller Bites</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-nandinih2.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Cake pops with a sports theme. One shot in the hoop is a free cake pop!</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/embrace_logo.png" width="75" alt="A logo that's a red outline of a sunrise">
+                    <h2>Embrace Bracelets</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-sophiagaiduch.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Bracelets that embrace your personal style and self expression. They come in many different colours and styles.</p>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/cfries_logo.png" width="75" alt="A logo of a box of cookie fries with a face">
+                    <h2>Cookie Fries</h2>
+                </div>
+                <p class="sites"><a href="https://cookie-fries-a.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://cookie-fries-b.2023-11dt.repl.co" target="_blank">Website B</a> • <a href="https://cookie-fries.2023-11dt.repl.co" target="_blank">Website C</a></p>
+                <p>Cookies in two flavours - funky fiesta and double choc. Comes with a complimentary sauce.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/barbs_logo.png" width="75" alt="A logo of a pink wardrobe with a dress with cakepops on it inside">
+                    <h2>Barb's Wardrobe</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-basilfuge.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Vanilla and chocolate cake pops inspired by dolls.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/bloom_logo.png" width="75" alt="A logo of some flowers and dumplings">
+                    <h2>Blooming Dumplings</h2>
+                </div>
+                <p class="sites"><a href="https://blooming-dumplings.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Where flower dumplings bloom with flavour. Chicken or vegetable (vegan) filling.</p>
+                <div class="tags">
+                    <img src="img/vegan_icon.png" width="15" alt="vegan">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/turtly_logo.png" width="75" alt="A logo of a cinnamon roll turtle">
+                    <h2>Turtly Temptations</h2>
+                </div>
+                <p class="sites"><a href="https://turtly-temptations.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Turtle-themed scrolls with chocolate filling and a variety of toppings.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/safari_logo.PNG" width="75" alt="A logo of a leaping tiger">
+                    <h2>Safari Fries</h2>
+                </div>
+                <p class="sites"><a href="https://safari-fries-website.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://frieswebsite.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Freshly made fries loaded with bacon, cheese and onion. </p>
+                <div class="tags">
+                    <img src="img/vegan_icon.png" width="15" alt="Vegan">
+                    <img src="img/gluten_icon.png" width="15" alt="Gluten free">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/curls_logo.png" width="75" alt="A logo of a bowl of curly fries">
+                    <h2>Crazy Curls</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-sageripleycornwell.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Curly fries with chicken salt and a special party sauce.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/scream_logo.png" width="75" alt="A logo of cartoon monsters and cookies">
+                    <h2>I Scream Monsters</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-annalong2.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://iscreammonstersproject.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Chocolate chip ice cream sandwiches themed around monsters.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/twists_logo.png" width="75" alt="A logo of pizza twists with confetti behind it">
+                    <h2>Tasty Twists</h2>
+                </div>
+                <p class="sites"><a href="https://tasty-twists-2023.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Twisted pizza dough with dipping sauce. A fusion of Italian and Australian cuisine.</p>
+                <div class="tags">
+                    <img src="img/vegan_icon.png" width="15" alt="Vegan">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/dessertos_logo.png" width="75" alt="A logo of a man with a taco for a body">
+                    <h2>Dessertos</h2>
+                </div>
+                <p class="sites"><a href="https://dessertos.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Dessert tacos with ice cream in two flavours - CaraChoc and VanChoc.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/waffle_logo.png" width="75" alt="A logo of a heart shaped waffle on a stick">
+                    <h2>Waffle Express</h2>
+                </div>
+                <p class="sites"><a href="https://waffle-express.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://9188091884-alexisrose3.2023-11dt.repl.co" target="_blank">Website B</a> • <a href="https://waffles-on-a-stick.2023-11dt.repl.co" target="_blank">Website C</a></p>
+                <p>Waffles on a stick with ice cream, sauce and toppings.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/frydae_logo.png" width="75" alt="A logo of a pink box of fries">
+                    <h2>Frydae</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-aloupeepmi.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Loaded fries with your chosen toppings.</p>
+                <div class="tags">
+                    <img src="img/vegan_icon.png" width="15" alt="Vegan">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/carb_logo.png" width="75" alt="A logo of two C's with the Italtian flag over them">
+                    <h2>Carbonara Classica</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-harininimmagadd.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Authentic Italian Carbonara pasta warmly served with or without bacon.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/clown_logo.png" width="75" alt="A logo of a jester hat">
+                    <h2>Clown Town</h2>
+                </div>
+                <p class="sites"><a href="https://clown-town-a.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://clown-town.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Spin the Clown, Down the Clown, and Feed the Clown to win prizes!</p>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/grab_logo.png" width="75" alt="A logo of a camera">
+                    <h2>Grab and Snap</h2>
+                </div>
+                <p class="sites"><a href="https://grab-and-snap.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://9188091884-lillyannkemp.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Spiders and cookies for sale with a photobooth to use!</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                    <img src="img/gluten_icon.png" width="15" alt="Gluten free">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/sausage_logo.png" width="75" alt="A logo of a sunbathing sausage underneath a beach umbrella">
+                    <h2>Sunbathing Sausages</h2>
+                </div>
+                <p class="sites"><a href="https://9188091884-aizzachrispin.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://9188091884-korimakodale-mc.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Beach themed sausages in 4 flavours.</p>
+                <div class="tags">
+                    <img src="img/dairy_icon.png" width="15" alt="Dairy free">
+                </div>
+            </div>
+            
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/nacho_logo.png" width="75" alt="A logo of a bowl of nachos">
+                    <h2>Take It Cheesy Nachos</h2>
+                </div>
+                <p class="sites"><a href="https://take-it-cheesy.2023-11dt.repl.co" target="_blank">Website A</a> • <a href="https://cheesy-nachos.2023-11dt.repl.co" target="_blank">Website B</a></p>
+                <p>Nachos with chilli beans, salsa and a special cheesy sauce.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/pinkade_logo.png" width="75" alt="A logo of a flamingo with a pink lemon for a body">
+                    <h2>Pinkade Lemonade</h2>
+                </div>
+                <p>Lemonade from locally grown lemons and real strawberry syrup.</p>
+                <div class="tags">
+                    <img src="img/vegan_icon.png" width="15" alt="Vegan">
+                    <img src="img/gluten_icon.png" width="15" alt="Gluten free">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/pig_logo.png" width="75" alt="A logo of a pig playing in mud behind a fence">
+                    <h2>Pigs in a Pen</h2>
+                </div>
+                <p class="sites"><a href="https://4littlepiggies.2023-11dt.repl.co" target="_blank">Website</a></p>
+                <p>Sausages rolls themed after pigs.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                </div>
+            </div>
+            
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/position_logo.png" width="75" alt="A logo of the Japanese flag with sushi in front and text saying 'The only good stall'">
+                    <h2>Pick Your Position Sushi</h2>
+                </div>
+                <p>Chicken katsu, vegetable or avocado sushi with a rugby theme.</p>
+                <div class="tags">
+                    <img src="img/vegan_icon.png" width="15" alt="Vegan">
+                </div>
+            </div>
+
+            <div class="stall">
+                <div class="stall top">
+                    <img src="img/floats_logo.png" width="75" alt="A logo of 3 floats with confetti behind them">
+                    <h2>Festive Floats</h2>
+                </div>
+                <p>Floats with vanilla ice cream and 3 drink options - cola, raspberry or blue.</p>
+                <div class="tags">
+                    <img src="img/vege_icon.png" width="15" alt="Vegetarian">
+                    <img src="img/gluten_icon.png" width="15" alt="Gluten free">
+                </div>
+            </div>
+
+            
+        </section>
+        
+        <div id="disclaimer">
+            <div id="close" onclick="popup()"><b>╳</b></div><b>Disclaimer: Images on sites may not match products.</b> 
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.freepik.com/icon/vegan_846457#fromView=search&term=vegetarian&page=1&position=4">&#169;Icons by Freepik, Website by Maddi Homewood</a>
+    </footer>
+
+    <!-- from https://www.w3schools.com/howto/howto_js_countdown.asp -->
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sep 15, 2023 12:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        
+        // Get today's date and time
+        var now = new Date().getTime();
+        
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        
+        // Output the result in an element with id="countdown"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m ";
+        
+        // If the count down is over, write some text 
+        if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "NOW";
+        }
+    }, 1000);
+        
+// from https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+// from https://www.w3schools.com/howto/howto_js_collapsible.asp 
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+
+        function popup() {
+            document.getElementById("disclaimer").style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
+
+<!-- disclaimer, remaining stalls, fix renamed links - DONE, -->

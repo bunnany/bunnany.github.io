@@ -1,0 +1,276 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    background-color: #f3eed9;
+    background-image: linear-gradient(to left, #ffdecc, #f7e8d4, #f7e4cf, #ffdecc);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.stall top img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+header {
+    background-image: linear-gradient(to bottom left, #c71c3c, #ff727c);
+    font-family: 'Patua One', cursive;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+header p {
+    color: #a61331;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #d12948;
+    max-width: 960px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #8f0f35;
+}
+
+#navbar a:active {
+    background-color: #55b8cd;
+}
+
+.open {
+    background-color: #55b8cd;
+}
+
+header h1 {
+    font-family: 'Forum', cursive;
+}
+
+h1 {
+    font-family: 'Patua One', cursive;
+    color: #005164;
+    font-size: 50px;
+    padding-right: 5px;
+}
+
+h2 {
+    font-family: 'Patua One', cursive;
+    color: #8a0f4a;
+}
+
+#countdown {
+    font-family: 'Patua One', cursive;
+    background-color: #62cce4;
+    margin: 10px;
+    width: 160px;
+    padding: 25px;
+    padding-top: 35px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Lunasima', sans-serif;
+    color: #b21532;
+}
+
+main {
+    padding: 16px;
+
+}
+
+.pagetop {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+
+.top {
+    display: flex;
+    flex-basis: 50%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.stall {
+    background-color: #62cce4;
+    margin: 5px;
+    padding: 10px;
+    flex: 40%;
+    border-radius: 10px;
+}
+
+@media (max-width: 590px) {
+    .stall {
+        flex: 100%;
+    }
+}
+
+.stall img {
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.tags {
+    justify-self: flex-end;
+}
+
+.tags img {
+    height: auto;
+    width: 25px;
+    border-radius: 0%;
+}
+.stall top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.stall h2 {
+    justify-self: right;
+    padding-left: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + main {
+  padding-top: 60px;
+}
+
+.ad {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: none;
+}
+
+
+footer {
+    margin: 5px;
+    max-width: 960px;
+    font-family: 'Lunasima', sans-serif;
+    
+}
+
+.content img {
+    height: auto;
+    width: 25px;
+    border-radius: 0%;
+}
+
+.content li {
+    font-size: 15px;
+    font-family: 'Lunasima', sans-serif;
+}
+
+.collapsible {
+    background-color: #ff727c;
+    color: #116ba2;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Patua One', cursive;
+    text-decoration: underline;
+    
+}
+
+.active, .collapsible:hover {
+    background-color: #e25261;
+    color: #003846;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #62cce4;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: #c71c3c;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    max-width: 960px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about p {
+    background-color: #62cce4;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.sites a {
+    color: #004766;
+    text-decoration: underline;
+}
+
+#disclaimer {
+    position: fixed;
+    font-size: 17px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e42143;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Lunasima', sans-serif;
+    text-wrap: balance;
+
+}
+
+#close {
+    font-size: 17px;
+    cursor: pointer;
+}
