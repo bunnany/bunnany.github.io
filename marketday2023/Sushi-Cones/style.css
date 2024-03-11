@@ -1,0 +1,285 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*targeting headers*/
+h1,
+h2{
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+}
+
+h1{
+    padding-top: 50px;
+}
+
+h2{
+    font-size: 35px;
+    padding-top: 80px;
+}
+
+/*styling text */
+li,
+p {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #FFF1AD;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+/*styling main headings*/
+.welcome{
+    font-size: 65px;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    color: #BEEAFF; 
+    padding: 10px 10px;
+}
+
+body{
+    margin: 0 auto;
+    font-family: Libre Baskerville, Libre Franklin;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(img/background.jpg);  
+    background-size: cover;
+    background-position: center;
+}
+
+/* navbar tutorial https://www.youtube.com/watch?v=PgAZ8KzfhO8&t=513s*/
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo sizing tutorial: https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_circle */
+.logo{
+    width: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FFF1AD;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/*styling main info*/
+.content{
+    color: #FFF1AD;
+    padding: 80px;
+    padding-top: 10px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.target{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card tutorial for flavours https://www.youtube.com/watch?v=2ipVafDw2ss*/
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+}
+
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #F8F7F2;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.container .card:hover{
+    height:400px;
+}
+
+.container .card .imgBx{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .cardcontent{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .cardcontent{
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .cardcontent h2{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container .card .cardcontent p{
+    color: black;
+    font-size: 1.1em;
+}
+
+
+
+/* card for ingredients */
+
+.container2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+}
+
+.container2 .card2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #F8F7F2;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.container2 .card2:hover{
+    height:400px;
+}
+
+.container2 .card2 .imgBx2{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container2 .card2:hover .imgBx2{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.container2 .card2 .imgBx2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 .card2 .cardcontent2{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container2 .card2:hover .cardcontent2{
+    top: 130px;
+    height: 250px;
+}
+
+.container2 .card2 .cardcontent2 h2{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container2 .card2 .cardcontent2 p{
+    color: black;
+    font-size: 1.1em;
+}
+
+/*styling text on about page*/
+.text2{
+    font-size: 20px;
+}

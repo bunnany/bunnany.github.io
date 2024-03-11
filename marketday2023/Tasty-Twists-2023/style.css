@@ -1,0 +1,250 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {box-sizing:border-box}
+
+body {
+    background-color: #F9ECCC;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #6B8F71;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 7vw;
+    transition: 1s
+}
+
+h2 {
+    text-align: center;
+    font-size: 4vw;
+    color: #BC4B51;
+    padding: 15px;
+    font-family: 'DM Serif Display', serif;
+}
+
+h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5vw;
+    color: #201E1F
+}
+
+img {
+  height: auto;
+  padding-bottom: 20px
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  background: #6B8F71;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topnav a {
+  color: #F9ECCC;
+  text-align: center;
+  padding: 14px 16px 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #45634a;
+  color: #F9ECCC;
+  border-radius:3px;
+}
+
+#alt-logo {
+    max-width: 4vw;
+    padding: 0px;
+    margin: 0px;
+    max-height: 4vw
+}
+
+.footer {
+    display: flex;
+    gap: 15px;
+    margin: 0px;
+    background-color: #BC4B51;
+    color: #F9ECCC;
+    text-align: center;
+    height: auto;
+    align-items: center;
+    justify-content: center
+}
+
+.bottom-nav a {
+  display: flex;
+  color: #F9ECCC;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+  margin: 3px;
+  font-family: 'DM Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-nav p {
+  display: flex;
+  color: #F9ECCC;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+  margin: 3px;
+  font-family: 'DM Sans', sans-serif;
+  justify-content: center;
+  align-items: center; 
+}
+
+.hero-image {
+    background-image: url("img/pizza_stick.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F9ECCC;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.hero-text img {
+    max-height: 40vh
+}
+
+/* the next class was on a dare*/
+.ballz {
+    display: flex;
+    align-items: center;
+    padding: 12px
+}
+
+.card {
+  max-width: 60%;
+  min-width: 400px;
+  height: auto;
+  text-align: center;
+  flex-direction: row;
+  margin: auto;
+  flex-basis: 33%;
+  font-family: 'DM Serif Display', serif;
+  flex: 3;
+}
+
+.menu-thing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-menu {
+  flex: 3;
+  margin: auto;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  flex-direction: row;
+  flex-basis: 33%;
+  padding: 30px;
+  min-width: 400px;
+  max-width: 50%
+}
+
+.price {
+  color: #201E1F;
+  font-size: 22px;
+}
+
+.card-menu button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  background-color: #BC4B51;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card-menu a {
+  text-align: center;
+  font-size: 2vw;
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+  color: #F9ECCC;
+}
+
+.card-menu button:hover {
+  opacity: 0.7;
+}
+
+.card-menu p {
+    font-size: 2vw  
+}
+
+.container-about {
+  position: relative;
+  text-align: center;
+  color: #F9ECCC;
+}
+
+.centered-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw;
+  font-family: 'DM Serif Display', serif;
+}
+
+.hero-text p {
+    font-size: 2vw
+}
+
+.hero-image button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  background-color: #BC4B51;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;  
+}
+
+.hero-image a {
+  font-size: 2vw;
+  font-family: 'DM Sans', sans-serif;
+  color: #F9ECCC;
+  text-decoration: none 
+}
+
+.about-text {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin: 2vw;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.about-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 20px;
+    padding: 20px;  
+}
