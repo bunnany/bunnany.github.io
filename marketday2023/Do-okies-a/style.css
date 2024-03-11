@@ -1,0 +1,909 @@
+/* BASIC STYLING */
+
+/* Set limits for the entire page */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Set the font for the head  */
+head {
+    font-family: "Nunito Sans"
+}
+
+/* Details for the entire body */
+body {
+    /* Make the body a certain width */
+    max-width: 1080px;
+    min-width: 900px;
+    /* Keep the body from overlapping the sidenav */
+    margin-left: 400px;
+    /* Seperate sections from each other */
+    padding: 50px;
+    /* Set details for the whole site */
+    background-color: #F1E4F3;
+    font-size: 25px;
+    font-family: Ysabeau;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Footer details */
+footer {
+    /* General details */
+    font-size: 35px;
+    background-color: #FE5D9F;
+    color: #F1E4F3;
+    /* Border details */
+    border: 5px;
+    border-style: solid;
+    border-color: #F686BD;
+    border-radius: 200px;
+    /* Spacing in the footer */
+    margin: 100px;
+    padding: 50px;
+}
+
+
+/* Footer details when hovered over */
+footer:hover {
+    /* Make the footer zoom slowly when hovered over */
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+
+
+
+
+/* THE MAIN NAV */
+nav {
+    align-items: center; /* horizontal center */
+    padding: 50px; /* Spacing in the nav */
+    margin-bottom: 60px; /* gap before the main */
+    border-spacing: 5px 1rem;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden; /* Keep the links invisible when they aren't hovered over */
+  /* Colors + fonts */
+  background-color: #F686BD;
+  font-family: "Nunito Sans";
+  /* Spacing in the navbar */
+  border-radius: 20px;
+  padding-left: 50px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  /* Keep everything on the left side of the nav*/
+  float: left;
+  /* Fonts + colors */
+  font-size: 30px;
+  color: white;
+  /* Spacing in the links' boxes */
+  padding: 14px 16px;
+  /* Remove the underline from the links */
+  text-decoration: none;
+}
+
+/* The main title of the page/main nav */
+.navbar h1 {
+    /* Give it a shadow of the title letters behind the title */
+    text-shadow: 10px 10px #FE5D9F;
+}
+
+/* The dropdown container */
+.dropdown {
+  /* Keep everything to the left side */
+  float: left;
+  /* Keep the links hidden when not hovered over */
+  overflow: hidden;
+}
+
+/* The heart icon in the main nav */
+.dropdown img {
+  /* Sizing */
+  width: 65px;
+  height: auto;
+  display: block;
+  /* Keep it at a distance from the top and bottom */
+  margin-top: 35px;
+  /* Center it in the container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  /* Spacing between the dropdown and dropdown button */
+  padding: 14px 16px;
+  /* Remove unwanted details */
+  border-style: none;
+  outline: none;
+  /* Get the same styles as the main nav bar */
+  background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  /* Change the colors of the links on hover */
+  background-color: #FE5D9F;
+  color: #F1E4F3;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* Colors + fonts */
+  background-color: #F1E4F3;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  /* Keep it at a certain place */
+  display: block;
+  float: none;
+  /* Colors + fonts */
+  color: #FE5D9F;
+  text-decoration: none;
+  /* Spacing of the links */
+  padding: 12px 16px;
+}
+
+/* Add a background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #FE5D9F;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* THE SIDENAV */
+.sidenav {
+  /* Set the general dimensions */
+  height: 100%;
+  width: 300px;
+  /* Font colors */
+  color: white;
+  /* Keep it in one place */
+  position: fixed;
+  /* Make it go the entire length of the left side of the page */
+  top: 0;
+  left: 0;
+  /* Colors + fonts */
+  background-color: #F686BD;
+  /* Make it a little bit lighter so it doesn't stand out so much */
+  opacity: 0.8;
+  /* Make it so text wraps around and doesn't continue going into the body section */
+  overflow-x: hidden;
+  /* Spacing */
+  padding-top: 20px;
+  /* Make it go behind the body if they overlap in a thinner web browser */
+  z-index: -1;
+  /* Center all the parts */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Create a scroll bar if the screen length is too small to fit everything */
+  inline-size: min-content;
+  overflow-y: scroll;
+}
+
+  /* Change the style of the links in the sidenav */
+.sidenav a {
+  /* Spacing */
+  padding: 8px 8px 8px 32px;
+  /* Style the link underlines */
+  text-decoration-color: white;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+/* Sidenav title and button styles */
+.sidenav h2, button {
+    /* Make it have the same font as the other body sections */
+    font-family: inherit;
+    /* Put a shadow of the text behind the text */
+    text-shadow: 5px 5px #FE5D9F;
+    font-size: 20px;
+    /* Sizing and spacing */
+    inline-size: 200px;
+    /* Center all the subtitles */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The email addresses in the sidenav */
+.sidenav p  {
+  /* Spacing */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  /* Colors + fonts */
+  font-size: 22px;
+  padding-left: 10px;
+  color: #F1E4F3;
+  /* Keep them in the middle */
+  display: block;
+  /* Remove unwanted text decoration */
+  border: none;
+  background: none;
+}
+
+/* Changes to the links in the sidenav when hovered over */
+.sidenav a:hover {
+  /* Make them move to the left */
+  margin-left: 15px;
+}
+
+
+/* Make the pop up appear over the actual page */
+.overlay {
+    /* Keep it in a certain place */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Make everything around the pop up look darker */
+    background: rgba(0, 0, 0, 0.7);
+    /* Make it so it appears above everything else*/
+    z-index: 2;
+    /* Sizing */
+    height: 100%;
+    width: 100%;
+    /* Make it fade to clear slower when exited */
+    transition: opacity 500ms;
+    /* Keep the information itself at full opacity */
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Target the entire pop up */
+.overlay:target {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* The email addresses section as an entire group */
+.sidenavcontacts {
+    /* Create space between it and the section above*/
+    margin-top: 50px;
+}
+
+/* The instagram shoutout section in the sidenav */
+.sidenavinformation {
+    /* Create space between it and the sidenav title */
+    margin-top: 50px;
+    /* Border styles */
+    border-radius: 50px;
+    border-color: white;
+    border-style: solid;
+}
+
+/* Style the logo in the side nav */
+.dookieslogo {
+    /* Border styles */
+    border-style: solid;
+    border-color: white;
+    /* Sizing */
+    width: 180px; 
+    height: auto;
+    /* Spacing */
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 55px;
+    margin-bottom: 60px;
+    /* Keep it in a specific place */
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THE INDEX PAGE*/
+/* THE POP UP */
+.box {
+    /* Sizing */
+    width: 20%;
+    margin: 0 auto;
+    padding: 35px;
+    /* Rounded corners */
+    border-radius: 15px;
+}
+
+/* The exit button on the pop up */
+.button {
+    /* Sizing */
+    font-size: 1em;
+    /* Spacing */
+    padding: 10px;
+    /* Border styles */
+    border: 2px solid #F1E4F3;
+    border-radius: 22px;
+    /* Make it fade quickly after exit */
+    transition: all 0.3s ease-out;
+}
+
+/* Style the pop up  */
+.popup {
+    /* Keep it in the middle of the page */
+    margin: 70px auto;
+    /* Spacing */
+    padding: 20px;
+    /* Colors */
+    background: #FE5D9F;
+    color: #F1E4F3;
+    /* Rounded corners */
+    border-radius: 5px;
+    /* Size and position */
+    width: 50%;
+    position: relative;
+    /* Make it fade slowly after exit */
+    transition: all 5s ease-in-out;
+}
+
+/* Keep the spacing around the text the same */
+.popup h2 {
+    margin-top: 0;
+}
+
+/* The part that closes the pop up */
+.popup .close {
+    /* Sizing + position */
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    /* Font and border styles */
+    font-size: 30px;
+    text-decoration: none;
+    color: #F1E4F3;
+}
+
+/* The paragraph writing on the pop up */
+.popup .content {
+    /* Keep the paragraph a certain size */
+    max-height: 30%;
+    /* Keep lines running one after the other down the pop up */
+    overflow: auto;
+}
+
+
+
+
+/* Details of the images on the index page */
+.firstgroup img, .secondgroup img {
+    /* Make them a certain size that is proportionate */
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* Border details */
+    border-radius: 15px;
+    border: 5px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+/* Details of the images on the index page when hovered over */
+.firstgroup img:hover, .secondgroup img:hover {
+    /* Make the images zoom slowly on hover */
+    transform: scale(1.3);
+    transition: 3.5s ease;
+    /* End at the same height as the paragraphs */
+    margin-top: 50px;
+}
+
+/* The paragraphs on the first horizontal section in the index page */
+.firstgroup {
+    /* Flex box */
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    /* Keep the three parts at a distance from the main nav*/
+    margin-top: 50px;
+    /* Spacing in the first horizontal group */
+    padding: 15px;
+}
+
+/* The first image on the index page */
+.firstgroup img {
+    /* Keep it at a distance from the main nav */
+    margin-top: 30px;
+} 
+
+/* The first two paragraphs in the first horizontal group */
+.firstgroup p{
+    /* Colors + fonts */
+    color: #F1E4F3;
+    background-color: #F686BD;
+    padding: 25px;
+    /* Remove the borders */
+    border-style: none;
+    /* Rounded corners */
+    border-radius: 15px;
+}
+
+/* The second horizontal group on the index page of two paragaphs and an image */
+.secondgroup {
+    /* Flex box */
+    flex-basis: 100%; 
+    display: flex;
+    flex-direction: row;
+    /* Make them all start at the same height */
+    margin-top: 60px;
+    /* Make a space between the section and the footer */
+    margin-bottom: 60px;
+}
+
+/* Information in the second horizontal group */
+.secondgroup p {
+    /* Fonts + colors */
+    background-color: #F686BD;
+    color: #F1E4F3;
+    /* Spacing in the second group */
+    padding: 15px;
+    /* Border styles */
+    border-style: none;
+    border-radius: 15px;
+}
+
+/* The image in the second horizontal group */
+ .secondgroup img {
+    margin: 25px 5px;
+    width: 75%;
+} 
+
+/* The section that redirects to the business page */
+.homepagetobusiness {
+    /* Fonts + Colors */
+    background-color: #F686BD;
+    color: #F1E4F3;
+    font-size: 35px;
+    /* Rounded Corners */
+    border-radius: 200px;
+    /* Spacing in the section */
+    margin: 100px;
+    padding: 50px;
+    /* Make the opacity lowered when not hovered over */
+    opacity: 0.8; 
+}
+
+/* Links on the section that redirects to the business page */
+.homepagetobusiness a, .homepagetobusiness p {
+    /* Change the underline and colors */
+    text-decoration-color: white;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: white;
+}
+
+/* Information in the section that redirects to the busines page when hovered over*/
+.homepagetobusiness:hover h1{
+    /* Make the entire box full opacity */
+    opacity: 1;
+    /* Slow zoom in */
+    transform: scale(1.1);
+    transition: 1.5s ease;
+}
+
+/* The index page paragraphs with white backgrounds */
+.thirdpara, .sixthpara {
+    /* Fonts + Colors */
+    color: #F686BD;
+    background-color: white;
+    font-size: 35px;
+    /* Spacing in the sections */
+    margin: 25px;
+    padding: 25px;
+    /* Border style */
+    border-radius: 15px;
+    border: 15px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+/* The index page paragraphs with white backgrounds when hovered */
+.thirdpara:hover, .sixthpara:hover {
+    /* Slow zoom */
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*THE PRODUCT PAGE*/
+/* Details of the fonts on the title pieces */
+section a {
+    /* Details of the link to the recipe on the product page */
+    text-decoration-color: white;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    
+}
+
+/* Make the title pieces on the product page zoom slowly when hovered over */
+section:hover h2{
+    transform: scale(1.1);
+    transition: 2.5s ease;
+}
+
+/* Detail of the section pieces on the product page */
+section h2 {
+    /* Colors and fonts */
+    background-color: #F686BD;
+    color: #F1E4F3;
+    text-shadow: 5px 5px #FE5D9F;
+    box-shadow: 5px 5px #FE5D9F;
+    font-size: 55px;
+    /* Spacing in the title pieces */
+    margin: 100px;
+    padding: 50px;
+    /* Border details */
+    border-radius: 15px;
+    border: 15px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+/* The first horizontal group of 2 images on the product page */
+.productimages {
+    /* Make them appear side by side */
+    flex-basis: 100%; 
+    display: flex;
+    flex-direction: row;
+}
+
+/* Style the horizontal group of 2 images on the product page */
+.productimages img{
+    /* Position + sizing on the page */
+    width: 35%;
+    height: auto;
+    display: block;
+    /* Spacing */
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Border styles */
+    border-radius: 15px;
+    border: 5px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+/* Change how the second group of horiztonal images looks when hovered over */
+.productimages:hover img{
+    /* Slow zoom */
+    transform: scale(1.1);
+    transition: 1.5s ease;
+}
+
+/* The first paragraph on the product page */
+.productpara {
+    /* Colors + fonts */
+    color: #F686BD;
+    background-color: white;
+    /* Spacing  */
+    padding: 25px;
+    margin: 50px;
+    /* Make the entire box a little bit lighter */
+    opacity: 0.8;
+    /* Border styles */
+    border-radius: 15px;
+    border: 15px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+
+.productpara2 {
+    /* Colors + fonts */
+    color: #F686BD;
+    background-color: white;
+    /* Spacing  */
+    padding: 25px;
+    margin: 50px;
+    /* Make the entire box a little bit lighter */
+    opacity: 0.8;
+    /* Border styles */
+    border-radius: 15px;
+    border: 15px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+.productpara3 {
+    /* Colors + fonts */
+    color: #F686BD;
+    background-color: white;
+    /* Spacing  */
+    padding: 25px;
+    margin: 50px;
+    /* Make the entire box a little bit lighter */
+    opacity: 0.8;
+    /* Border styles */
+    border-radius: 15px;
+    border: 15px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+
+.productinfo {
+    /* Colors + fonts */
+    color: #F686BD;
+    background-color: white;
+    /* Spacing  */
+    padding: 25px;
+    margin: 50px;
+    /* Make the entire box a little bit lighter */
+    opacity: 0.8;
+    /* Border styles */
+    border-radius: 15px;
+    border: 15px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+/* The video on the product page */
+iframe {
+  /* Border style */
+  border-radius: 15px;
+  border: 5px;
+  border-style: solid;
+  border-color: #F686BD;
+  /* Center the video */
+  display: block;
+  margin: 0 auto;
+  /* Sizing */
+  width: 800px; 
+  height: 600px;
+}
+
+/* Style the ingredients */
+table {
+  /* Keep the font the same */
+  font-family: inherit;
+  /* Make the table columns have the same confines */
+  border-collapse: collapse; 
+  /* Center all the aspects */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Sizing */
+  width: 75%;
+  height: auto;
+  /* Colors */
+  color: #FE5D9F;
+  /* Border styles */
+  border-radius: 15px;
+  border: 5px;
+  border-style: solid;
+  border-color: #F686BD;
+  
+}
+
+/* Change how the ingredients table looks when hovered over */
+table:hover {
+    /* Slow zoom */
+    transform: scale(1.1);
+    transition: 3.5s ease;
+}
+
+/* Change how the specific parts of the ingredients table look */
+td, th {
+  /* Sizing */
+  padding: 20px;
+  margin: 10px;
+  /*  Rounded corners */
+  border-radius: 5px;
+}
+
+/* Make every second line a different color */
+tr:nth-child(even) {
+  /* Colors */
+  background-color: #FE5D9F;
+  color: #F1E4F3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BUSINESS PAGE*//* */
+
+/* The web page title between the images */
+.businesspara p{
+    /* Fonts + colors */
+    color: #F686BD;
+    background-color: white;
+    font-size: 35px;
+    /* Border styles */
+    border-radius: 15px;
+    border: 15px;
+    border-style: solid;
+    border-color: #F686BD;
+    /* Spacing */
+    margin: 100px;
+    padding: 50px;
+}
+
+/* Make the business page title change when hovered over */
+.businesspara:hover {
+    /* Slow zoom */
+    transform: scale(1.1);
+    transition: 2.5s ease;
+}
+
+/* The first overlay in the first image on the businesss page */
+.businessoverlay {
+  /* Keep it in a certain place */
+  position: absolute; 
+  bottom: 0; 
+  /* Colors + fonts */
+  background: rgb(241, 228, 243);
+  background:rgba(241,228,243, 1);  
+  color: #F686BD;
+  background-color: #F1E4F3;
+  /* Sizing */
+  width: 75%;
+  height: auto;
+  margin-left: 165px;
+  padding: 20px;
+  max-width: 650px;
+  /* Make it appear slowly */
+  transition: 1.5s ease;
+  /* Make it invisible at first */
+  opacity:0;
+  /* Border style */
+  border-radius: 15px;
+  border: 15px;
+  border-style: solid;
+  border-color: #FE5D9F;
+  /* Make sure the words only go a certain distance */
+  inline-size: 580px;
+}
+
+ /* Make the first text overlay ont he businnes page in the first image appear when hovered over */
+.businessimg:hover .businessoverlay {
+  /* Makes it become visible */
+  opacity: 1;
+  /* Makes it appear slowly */
+  transform: scale(1.1);
+}
+
+ /* The first image on the business web page */
+.businessimg img{
+    /* Keep it in centered */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Sizing */
+    width: 75%;
+    height: auto;
+    /* Spacing */
+    margin-top: 50px;
+    /* Border style */
+    border-radius: 15px;
+    border: 5px;
+    border-style: solid;
+    border-color: #F686BD;
+}
+
+
+/* The second image on the business web page */
+.secondbusinessimg {
+  position: relative;
+  width:100%;
+  height: auto; 
+}
+
+/* Style the second image on the business web page */
+.secondbusinessimg img{
+  /* Keep it centered */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* Border styles */
+  border-radius: 15px;
+  border: 5px;
+  border-style: solid;
+  border-color: #F686BD;
+  /* Sizing */
+  width: 75%;
+}
+
+/* Overlay text on the second business image on the business page */
+.text-block {
+  /* Keep it in a certain place */
+  position: absolute;
+  /* Sizing */
+  bottom: 40px;
+  right: 200px;
+  margin-bottom: 20px;
+  height: 150px;
+  /* Colors + fonts */
+  background-color: #F1E4F3;
+  color: #F686BD;
+  font-size: 20px;
+  /* Border styles */
+  border-radius: 17px;
+  border: 20px;
+  border-style: solid;
+  border-color: #F686BD;
+  /* Make it appear inivisible when not hovered over */
+  opacity: 0;
+}
+
+
+/* When the second image on the business page is hovered over */
+.secondbusinessimg:hover .text-block {
+  /* Make the text appear */
+  opacity: 1;
+  /* Slow zoom */
+  transform: scale(1.1);
+  transition: 1.5s ease;
+  /* Sizing */
+  width: 300px;
+  height: 200px;
+}
+

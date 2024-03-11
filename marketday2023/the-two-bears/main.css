@@ -1,0 +1,345 @@
+:root {
+    --headercolour: #85776E;
+    --logobrown: #443c3c;
+    --whitehover: #F3E7D9;
+    --tertiarycolour: #8EC3EC;
+    --lightbrown: #A77E75
+}
+
+body {
+    background-color: #F3E7D9;
+    opacity: 1;
+    background: linear-gradient(135deg, #BAA99255 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #BAA992 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #BAA99255 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #BAA992 25%, #F3E7D9 25%) 0px 0/ 80px 80px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 88px;
+    color: #ff9292;
+    text-shadow: -2px 2px 4px #000;
+    font-family: DK;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 88px;
+    color: #A77E75;
+    text-shadow: -2px 2px 4px #000;
+    font-family: DK;
+    font-weight: 650;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 88px;
+    color: #fff;
+    font-family: DK;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 15px;
+    line-height: 21px;
+    color: #000;
+    text-shadow: -2px 2px 4px #BAA992;
+    font-family: Antipasto;
+}
+
+a {
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../img/ythover.png) url(../img/instahover.png)
+}
+
+.wrapper-main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: DK;
+    src: url(../fonts/DK.ttf)
+    }
+
+@font-face {
+    font-family: Antipasto;
+    src: url(../fonts/Antipasto.ttf)
+}
+
+.mainheader {
+    font-family: DK;
+    font-size: 750%;
+    padding: 25px;
+    text-align: center;
+}
+
+ main .main-intro a {
+    background: rgb(167,126,117);
+background: linear-gradient(90deg, rgba(167,126,117,1) 0%, rgba(243,231,217,1) 35%, rgba(243,231,217,1) 50%, rgba(243,231,217,1) 65%, rgba(167,126,117,1) 100%);
+}
+
+.ballz {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.main-image {
+    height: 500px;
+    background-image: url(../img/placeholder.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all ease-in-out 75ms;
+}
+
+.main-image:hover {
+    background-image: url(../img/bearmeme.jpeg);
+}
+
+.header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--headercolour);
+    display: flex;
+    justify-content: space-around;
+    z-index: 9999;
+}
+
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 30px;
+    display: flex;
+}
+
+.header-main-logo img {
+    height: 50px;
+    align-self: center;
+}
+
+.header-main-nav {
+    width: fit-content;
+    height: 100%;
+}
+
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a {
+    padding: 0 10px;
+    font-family: Antipasto;
+    line-height: 80px;
+    color: #000;
+    display: block;
+    height: 100%;
+}
+
+.header-main-nav ul li a:hover {
+    color: #EEECEC;
+}
+
+.header-main-sm {
+    width: fit-content;
+    height: 100%;
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header-main-sm-in {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/logoins.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-in:hover {
+    background-image: url(../img/instahover.png);
+}
+
+.header-main-sm-yt {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/logoyt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-yt:hover {
+    background-image: url(../img/ythover.png);
+}
+
+.main {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 35px);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-image: url("img/bearlogo.png");
+    background-size: 60vh, cover;
+    background-repeat: no-repeat;
+    background-position: bottom left calc(65% + 50px), center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    column-gap: 25%;
+}
+
+main .main-intro h2 {
+    font-size: 110px;
+    font-family: 'Style Script';
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    background-image: url(../img/smearpaint.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+}
+
+main .main-intro h1 {
+    font-size: 110px;
+    margin-top: 100px;
+}
+
+.main-intro p {
+    text-align: center;
+    background-image: url(../img/paintsmear.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+main p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+main a {
+    font-size: 20px;
+    margin-top: 20px;
+    display: block;
+    background-color: var(--whitehover);
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+main .main-market p {
+    border-left: 4px solid var(--whitehover);
+    padding-left: 20px;
+    margin: 50px 0;
+}
+
+main .main-market {
+    padding-bottom: 8px;
+}
+
+/* category section */
+
+.index-category {
+    width: 50%;
+    background: rgb(167,126,117);
+background: linear-gradient(90deg, rgba(167,126,117,1) 0%, rgba(243,231,217,1) 50%, rgba(167,126,117,1) 100%);
+    padding: 20px;
+    display: flex;
+    text-shadow: none;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: DK;
+    margin: 0 auto;
+}
+
+.index-category-box {
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.index-category-box:nth-child(2) {
+    background-image: url(../img/brownbear.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.index-category-box:nth-child(3) {
+    background-image: url(../img/whitebear.jpg);
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all ease-in-out 300ms;
+}
+
+.index-category-box:hover .dark-overlay {
+    opacity: 0;
+}
+
+.index-category-box h3 {
+    font-size: 26px;
+    line-height: 24px;
+    text-align: center;
+    text-shadow: -2px 2px 4px #000;
+    font-family: DK;
+    z-index: 100;
+}
+
+.index-category p {
+    color: #111;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    flex-basis: 100%;
+}

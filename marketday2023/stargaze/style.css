@@ -1,0 +1,299 @@
+/* BODY */
+
+body {
+    background-color: #3f5078;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* LOGO */
+
+.logo{
+    width: 125px; 
+    height: 125px;
+    transition: transform 3s;
+}
+
+/*When hover over logo, logo rotates and gets smaller till it's no longer visible*/
+.logo:hover{
+  transform: rotateY(180deg) scale(0); 
+}
+
+/* TITLE */
+
+.header-container {
+    background: url(images/pls_work.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 300px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* H1 */
+
+.header-content {
+    font-family: 'Kalam', cursive;
+    color: #FFF;
+    font-size: 56px;
+    height: 100%; 
+    padding-top: 55px;
+    display: flex;
+    text-align: center;
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+/*Animation: go from white to blue infinintly*/
+.title-animation {    
+    animation-name: title-color1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes title-color1 {
+  from {color: #ffffff;}
+  to {color: #9DBDE7;}
+}
+
+/*For the TEAM and LOCATION webpages, moving the title while it chnages colour*/
+.title-moving{
+    animation: title-color2 10s linear infinite;
+}
+
+@keyframes title-color2 {
+  0%, 100% {
+    color: #ffffff;
+    transform: translateX(-150px);
+  }
+  50% {
+    color: #9DBDE7;
+    transform: translateX(150px);
+  }
+}
+
+/* INDEX page + LOCATION page h2 titles */
+h2{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* NAV for all webpages*/
+
+.nav-container{
+    display: flex;
+    flex-direction: row; /*This ensures that the content of the page is next to the side nav*/
+}
+
+nav {  
+    font-family: 'Satisfy', cursive;
+    flex-direction: column; /*This creates the side nav*/
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #3f5078;
+    padding: 10px;
+    margin-right: 200px;
+    height: 800px;
+    margin-left: 6px;
+}
+
+nav a{
+    display: block;
+    margin-bottom: 100px;
+    width: 130px;
+    height: 100px;
+    background-color: #192748;
+    color: #9DBDE7;
+    text-align: center;
+    border: dashed white 2px;
+    font-size: 27px;
+}
+
+/*Change background colour when hover over each nav*/
+nav a:hover{
+    background-color: #9DBDE7;
+    color: #ffffff;
+}
+
+@keyframes nav-color{
+from {background-color: #9DBDE7;}
+to {background-color: #204e79;}
+}
+
+.nav-animation:hover{
+      animation: nav-color 3s alternate infinite;
+}
+
+/* IMAGES for all webpages*/
+
+.page-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.dumpling-img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+/*Have the image be in the center*/
+.dumpling-img-container img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 600px;
+    margin-top: 30px;
+}
+
+/*Vertical scroll slides*/
+.page-content-container-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.scroll-container {
+    width: 750px;
+    height: 750px;
+    overflow-y: scroll; /*so the scoll is only vertical*/
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory; /*snap effect*/
+}
+
+/*Position the images*/
+.scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 5em;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-color: #3f5078;
+}
+
+/*Specifically for INDEX PAGE, easter egg + tooltip*/
+
+/*This code will ensure that the dumpling image and star image are next to each other*/
+.photos-together{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline; /*Position the star image*/
+}
+
+/*Codes for the star image, when hovered, image rotates and gets smaller, revealing the text*/
+.easter-egg{
+    text-align: center;
+}
+
+.easter-egg img{
+    height: 130px;
+    width: 130px;
+    transition: transform 2s;
+}
+
+.easter-egg:hover img {
+  transform: rotateY(180deg) scale(0);
+}
+
+.easter-egg-text{
+    visibility: hidden;
+    color: white;
+    font-size: 16px;
+    transform: translate(0%, -155%);
+
+}
+
+.easter-egg:hover .easter-egg-text {
+    visibility: visible;
+}
+
+/* TOOLTIP */
+/*Tooltip the index page dumpling img to take the audience to history page*/
+
+.tooltip{
+    visibility: hidden;
+    position: relative;
+}
+
+.tooltip-text {
+    width: 200px;
+    text-align: center;
+    background-color: #5d82b1;
+    color: white;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    top: 100%; /*Position below the container*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.dumpling-img-container:hover .tooltip-text {
+    visibility: visible; /* Show the tooltip on hover */
+}
+
+.tooltip .tooltip-text::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%;  
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #5d82b1 transparent;
+}
+
+/* DESCRIPTION for all webpages*/
+.Description{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    color: #ffffff;
+    text-indent: 50px;    
+    font-size: 22px;
+    border: solid #938a8a 2px;
+    padding: 40px;
+    background-image: linear-gradient(#15213e, #5d82b1);
+}
+
+/* FOOTER */
+.footer{
+    font-family: 'Noto Serif', serif;
+    display: flex;
+    color: white;
+    background-color: #3f5078;
+    justify-content: space-between;
+    flex-direction: row;
+    border-style: solid;
+    border-color: #938a8a transparent transparent  transparent;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Image Attribution link */
+.refrence a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold; /*Bold the text*/
+    display: inline-block;
+}
+
+.refrence a:hover{
+    text-decoration: underline; /* Underline the text*/    
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Churro Storms</title>
+    <link href="style.css" rel="stylesheet" type="text/css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Chewy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- Logo and Brand Name -->
+    <section class = "heading">
+        <div id="col-1">
+        <img src="img/logo.png" alt="logo" width="360">
+        </div>
+        <div id="col-2">
+        <h1>CHURRO<br>STORMS</h1>
+        </div>
+    </section>
+    
+    <header>
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chocolateflood.html">Chocolate Flood</a></li>
+                <li><a href="caramelquake.html">Caramel Quake</a></li>
+                <li><a href="https://www.instagram.com/churro.storms/" target="_blank">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Image Slider reference:
+            https://www.bannerbear.com/blog/how-to-create-an-image-slider-in-html-css-and-javascript/#css 
+    -->
+    <div class="slider">
+        <img id="img-1" src="img/banner1.png" alt="ad slide">
+        <img id="img-2" src="img/banner2.jpg" alt="churros next to sauce">
+        <img id="img-3" src="img/banner3.jpg" alt="long churros"> 
+        <img id="img-4" src="img/banner4.png" alt="mini churros">
+        <img id="img-5" src="img/banner5.png" alt="logo + churro storms">
+    </div>
+    <div class="navigation-button">
+        <span class="dot active" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+        <span class="dot" onclick="changeSlide(3)"></span>
+        <span class="dot" onclick="changeSlide(4)"></span>
+    </div>
+
+        <!-- Description -->
+        <section>
+            <h3>LOADED CHURROS</h3>
+            <p>The perfect mix between loaded fries and just normal churros!<br>Tying the two together by having mini churros loaded with toppings.<br>Perfect if you have a sweet tooth - especially the caramel one 😉</p>
+        </section>
+
+        <!-- Pop-up reference:
+                https://stackoverflow.com/questions/29345016/auto-popup-with-close-button-using-html-css
+        -->
+        <div class="box">
+        <a class="button"></a>
+        </div>
+
+        <div id="popup1" class="overlay">
+            <div class="popup" >
+                <h2>PRE-ORDERS ARE UP!</h2>
+                <p>Visit our <a href="https://www.instagram.com/churro.storms/" target="_blank">instagram</a> page and dm us to order now!</p>
+                <img src="img/banner5.png" alt="logo + churro storms">
+                <p>See you September 15th! 😉</p>
+                <a class="close" href="#popup1">×</a>
+                <div class="content">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>&#169; 11DT 2023</footer>
+    
+  <script src="script.js"></script>
+        
+</body>
+
+</html>

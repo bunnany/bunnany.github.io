@@ -1,0 +1,290 @@
+
+/*
+Colours:
+    #ED2647
+    #8D021F
+    #5E1914
+*/
+
+/* 
+Image Slider reference:
+        https://www.bannerbear.com/blog/how-to-create-an-image-slider-in-html-css-and-javascript/#css 
+*/
+
+.slider {
+  width: 100%;
+  height: 510px;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider img:first-child {
+  z-index: 1;
+}
+
+.slider img:nth-child(2) {
+  z-index: 0;
+}
+
+.navigation-button {
+  text-align: center;
+  position: relative;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  background-color: #8D021F;
+}
+
+/* 
+Import Fonts references:
+    https://www.youtube.com/watch?v=g15mF_XAOB8&list=PL0eyrZgxdwhwP0AxnbBiDBCi53LK9uCMZ&index=15
+    https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website 
+*/
+
+@font-face {
+font-family: "CustomFont";
+src: url(../fonts/font.otf);
+}
+
+h1 {
+    font-family: "CustomFont", serif;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: 'Chewy', cursive;
+    font-size: 70px;
+}
+
+h3 {
+    font-family: "CustomFont", serif;
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 25px;
+}
+
+body {
+    background-color: #ED2647;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section {
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section > p {
+        padding: 50px;
+}
+
+section > ul > li {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 25px;
+    list-style: none;
+}
+
+nav > ul > li {
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px;
+    white-space: nowrap;
+}
+
+/* classes */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class1 {
+    background-color: #8D021F;
+    color: #ffffff; 
+    border-color: #ffffff;
+}
+.class1 p {
+    color: white;
+}
+
+.class2 {
+    border-style: dashed;
+    border-radius:5px;
+    color: #000000;
+    border-color: #000000;
+}
+
+/* ids */
+#col-1 {
+  flex: 1;
+}
+
+#col-2 {
+  flex: 1;
+}
+
+/* CSS for Nav Bar 
+(the video I used for the hover effect got deleted) */
+nav {
+  background-color: #ffffff;
+    font-family: 'Chewy', cursive;
+    font-size: 29px;
+}
+
+nav {
+  width: 0px;
+  background: #8D021F;
+  transition: width 2s;
+}
+
+nav:hover {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 48px;
+}
+
+nav li a:hover {
+  background-color: #ffffff;
+  color: #8D021F;
+}
+
+/* Pop-up reference:
+        https://stackoverflow.com/questions/29345016/auto-popup-with-close-button-using-html-css
+*/
+.box {
+    width: 80%;
+    height: 800%;
+    margin: 0 auto;
+    padding: 35px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.button {
+    font-size: 1em;
+    padding: 1px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: #000000;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: white;
+    width: 800px;
+    position: relative;
+    transition: all 5s ease-in;
+}
+
+.popup h2, p {
+    margin-top: 0;
+    color: #000000;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+
+.popup .close:hover {
+    color: #452727;
+}
+
+.popup .content {
+    max-height: 50%;
+    overflow: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Screen Width reference:
+        https://www.shecodes.io/athena/36070-how-to-make-your-code-responsive-on-desktop-and-mobile-devices-using-css#:~:text=in%2011.2%20seconds-,To%20make%20your%20code%20responsive%20on%20desktop%20and%20mobile%20devices,various%20screen%20sizes%20and%20orientations.
+*/
+@media only screen and (min-width: 992px) {
+    .overlay {
+        transition: opacity 500ms;
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .overlay {
+        width: 1000px;
+        margin: 0 auto;
+        transition: opacity 500ms;
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.overlay:target {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.box {
+    position: sticky;
+}
