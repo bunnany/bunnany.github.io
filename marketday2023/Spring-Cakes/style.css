@@ -1,0 +1,564 @@
+
+/*font-family: 'Cherry Bomb One', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Emilys Candy', cursive;  */
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #ffeeeb;
+    margin-top: 0px;
+    overflow-x: hidden;
+}
+
+/* main key items */
+body {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'EB Garamond', serif;
+    color: #f7b09c;
+    font-weight: lighter;
+    text-shadow: 4px 3px 4px #bdcec6;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top:5px;
+}
+
+h2 {
+    font-size: clamp(3.75rem, 1.8403rem + 6.1111vw, 7.1875rem);
+    font-family: 'El Messiri', sans-serif;
+    color: #f7b09c;
+    text-shadow: 4px 3px 4px #061213;
+}
+
+h4 {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: clamp(1.3125rem, 0.2411rem + 3.4286vw, 2.8125rem);
+    color: #bdcec6;
+    font-weight: lighter;
+    margin: 0;
+}
+.quote {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+.quote h4 {
+    font-size: 46px;
+}
+.cupword {
+    font-size: 20px;
+    padding-left: 80px;
+    font-family: 'Emilys Candy', cursive;
+    color: #25585e;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 30px 0px 0px;
+    background: #f9ded7;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+nav img {
+    max-width: 120px;
+    width: 100%;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #25585e;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'EB Garamond', serif;   
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f7b09c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+
+p a {
+    color: #25585e;
+    text-decoration: none;
+}
+
+/*Dropdown menu */
+.dropbtn {
+    text-align: center;
+    background-color: #bdcec6;
+    color: #25585e;
+    padding: 4px;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 21px;
+    border: 3px;
+    border-radius: 4px;
+    border-color: #25585e;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* The container <nav> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bdcec6;
+    background-image: url('img/2.png');
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #25585e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #fecfc4
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Effects*/
+.owl-carousel {
+    background-color: rgb(247, 176, 156, .2);
+    border-radius: 5px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.owl-carousel owl-theme img {
+    max-height: 40px;
+}
+
+/* Falling flowers */
+.section {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.set {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.set div {
+    position: absolute;
+    display: block;
+}
+
+.set div:nth-child(1) {
+    left: 20%;
+    animation: animate 10s linear infinite;
+    animation-delay: -7s;
+}
+
+.set div:nth-child(2) {
+    left: 50%;
+    animation: animate 14s linear infinite;
+    animation-delay: -5s;
+}
+
+.set div:nth-child(3) {
+    left: 70%;
+    animation: animate 15s linear infinite;
+    animation-delay: 0s;
+}
+
+.set div:nth-child(4) {
+    left: 0%;
+    animation: animate 11s linear infinite;
+    animation-delay: -5s;
+}
+
+.set div:nth-child(5) {
+    left: 85%;
+    animation: animate 13s linear infinite;
+    animation-delay: -10s;
+}
+
+.set div:nth-child(6) {
+    left: 0%;
+    animation: animate 7s linear infinite;
+}
+
+.set div:nth-child(7) {
+    left: 15%;
+    animation: animate 9s linear infinite;
+}
+
+.set div:nth-child(8) {
+    left: 60%;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(-20px) rotate(45deg);
+    }
+
+    40% {
+        transform: translateX(-20px) rotate(90deg);
+    }
+
+    60% {
+        transform: translateX(20px) rotate(180deg);
+    }
+
+    80% {
+        transform: translateX(-20px) rotate(180deg);
+    }
+
+    100% {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
+
+.set2 {
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+}
+
+.set3 {
+    transform: scale(0.8) rotateX(90deg);
+    filter: blur(4px);
+}
+
+
+/*Our Product Page */
+h3 {
+    font-size: clamp(1.75rem, 1.1597rem + 1.8889vw, 2.8125rem);
+    font-family: 'Cherry Bomb One', cursive;
+    font-weight: lighter;
+    color: #bdcec6;
+    margin: 0px;
+    align-self: center;
+}
+.subheading h3{
+    text-decoration: underline;
+    text-decoration-color: #bdcec6;
+    color: #ffc7b8;
+    font-size: clamp(2rem, 1.2014rem + 2.5556vw, 3.4375rem);
+}
+
+.cup-content p {
+    font-size: clamp(1.375rem, 1.0972rem + 0.8889vw, 1.875rem);
+    font-family: 'Cherry Bomb One', cursive;
+    font-weight: lighter;
+    color: #25585e;
+    margin: 0px;
+    text-align: center;
+}
+.cup-content a {
+    color: #669499;
+}
+
+.cup-image img {
+    height: 400px;
+}
+
+.cup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.cup-1 , .cup-3, .cup-5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cup-image {
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+
+.cup-image img {
+    position: inherit;
+    z-index: 3;
+}
+
+.rose img{
+    position: absolute;
+    top: 216px;
+    left: 110px;
+    z-index: 4;
+    height:200px;
+}
+.chocolate img{
+    position: absolute;
+    top: 16px;
+    left: 50px;
+    z-index: 2;
+    height:180px;
+}
+.vanilla img {
+    height: 150px;
+    position: absolute;
+    top: 240px;
+    right: 150px;
+    z-index: 4;
+}
+.orange img {
+    height: 210px;
+    position: absolute;
+    top: 240px;
+    z-index: 4;
+    right: 230px;
+}
+.vanilla-2 img {
+    height: 180px;
+    position: absolute;
+    top: 250px;
+    left: 160px;
+    z-index: 4;
+}
+
+.cup-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/*Parallax Effect  */
+.parallax {
+    /* The image used */
+    background-image: url('img/tray.avif');
+    margin: 0;
+
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    opacity: 0.9;
+    border-radius: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Aboout us Page */
+.market {
+    display: flex;
+    background-color: #bdcec6;
+    height: 350px;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 10px;
+}
+.market h2 {
+    font-size: clamp(2.8125rem, 1.5972rem + 3.8889vw, 5rem);
+    font-family: 'El Messiri', sans-serif;
+    color: #25585e;
+    text-shadow: 4px 3px 4px #fecfc4;
+    padding-top: 20%;
+    text-align: center;
+    margin: 0px;
+    z-index: 2;
+}
+
+.market p {
+    font-size: clamp(1.5625rem, 1.0417rem + 1.6667vw, 2.5rem);
+    font-family: 'El Messiri', sans-serif;
+    color: #f7b09c;
+    text-shadow: 4px 3px 4px #25585e;
+    border: 0px;
+    margin: 0px;
+}
+.markcon {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+.When , .Where , .Time , .Price{
+    width: 300px;
+    background-image: linear-gradient(rgb(247,176,156),rgb(255,238,235));
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.box-1 {
+    position: relative;  
+    align-items: center;
+}
+.When , .Where , .Time , .Price p{
+    font-size: 30px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    color: #25585e;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgb(189,206,198, 0.8),rgb(37,88,94, 0.8));
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    text-align: center;
+}
+.overlay p{
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 30px;
+    color: #ffeeeb;
+}
+.box-1:hover .overlay {
+    height: 200px;
+    border-radius: 20px;
+}
+/*Nutrients Page */
+.ingredient-1, .ingredient-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 0;
+    align-items: center;
+}
+.ingre-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+.ingre-content li{
+    font-family:'Emilys Candy', cursive;
+    font-size: clamp(1.125rem, 0.8819rem + 0.7778vw, 1.5625rem);
+    color:#25585e;
+    text-align: center;
+}
+.ingre-content h4{
+    text-align: center;
+}
+ul {
+    list-style: none;
+    align-items: center;
+}
+.ing h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/*Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media (device-width < 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+    .cup-1{
+        flex-direction: column;
+    }
+    .cup-2{
+        flex-direction: column;
+    }
+    .cup-3{
+        flex-direction: column;
+    }
+    .cup-5{
+        flex-direction: column;
+    }
+    .market img {
+        max-width: 60%;
+    }
+    .market{
+        text-align: center;
+        overflow: scroll;
+    }
+    .ingredient-1, .ingredient-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image img {
+        max-width: 100%;
+    }
+}
