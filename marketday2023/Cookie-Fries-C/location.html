@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cookie Fries</title>
+  <link rel="icon" type="image/x-icon" href="logo_final.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Karla&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+        <a href="index.html"><img src="logo_final.png" class="logo" width="90" alt="digitally drawn logo of five yellow fry shaped biscuits inside a red fry container. the container has a smiley face, arms, and legs."></a>
+            <ul>
+                <li class="navlinks"><a href="index.html">Home</a></li>
+                <li class="navlinks"><a href="product.html">Product</a></li>
+                <li class="navlinks"><a href="ingredients.html">Ingredients</a></li>
+                <li class="navlinks"><a class="active" href="location.html">Location</a></li>
+                <li class="navlinks"><a href="pre-order.html">Pre-order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-titles">Location</h1>
+        <article>
+            <!-- slideshow - shows map of the school (with the brook courts circled) and where wgc is located in wellington -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="map.PNG" width="600" alt="" class="images" alt="digital map of the Wellington Girls College campus. the location of market day (brook courts) is circled to show the user where to go">
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- google map showing where wgc is located -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.2272507502344!2d174.77909737783077!3d-41.27576083167063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae2f27710d0d%3A0x2d0763d38f00974b!2sWellington%20Girls&#39;%20College!5e0!3m2!1sen!2snz!4v1692732743559!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
+        </article>
+        
+        <section>
+        <p>On the day (<b>September 15th</b>), you will be able to find us at our stall located on the <b>Brook Courts, WGC</b>. This is shown in the picture above.</p>
+        <p>If you are looking to <b>pre-order</b>, you can dm us on our instagram @<i>cookie_friess</i>. To pre-order our product through this website, press <a href="preorder.html" id="link"><b>HERE</b></a>! We will also be posting updates on our instagram, so give us a follow to make sure you never miss a thing!!</p>
+        <br>
+        </section>
+        
+        <section>
+            <!-- revolving slideshow of messages from students about the product -->
+            <h2 id="messages">Here are messages from some students who are excited for Market Day . . . and Cookie Fries!!!</h2>
+            <div class="parent">
+                <div class="slides">
+                    <div class="element">
+                        <h3><i>I am so excited for this product. Cookie Fries is such an awesome idea, I'll definitely be buying!! - Lucy H (Year 11)</i></h3>
+                    </div>
+                    <div class="element">
+                        <h3><i>I just know this is going to be my favourite stall on the day!! - Meredith T (Year 13)</i></h3>
+                    </div>
+                    <div class="element">
+                        <h3><i>Cookie Fries look so delicious!! I'm looking forward to trying them!! - Neve M (Year 10)</i></h3>
+                    </div>
+                    <div class="element">
+                        <h3><i>Wow, $2.99 is so reasonable for this product! How awesome!! - Petra K.S. (Year 11)</i></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#169; Amelia Townend 2023<a class="fa fa-instagram"></a>@cookie.friess</p>
+        <p>@<i>khannu@wgc.school.nz</i>, @<i>tanka@wgc.school.nz</i>, @<i>montgomeryab@wgc.school.nz</i>, @<i>kaletlaab@wgc.school.nz</i></p>
+    </footer>
+
+    
+
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

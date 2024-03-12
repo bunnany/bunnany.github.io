@@ -1,0 +1,368 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*navigation bar*/
+li, a, button, p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:  rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16.19px;
+    padding-right: 16.19px;
+}
+
+.logo {
+    display: inline-block;
+    width: 60px;
+    padding-right: 15px;
+}
+
+.logo-text {
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links a {
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/*this style will only apply when the nav links are hovered over*/
+.nav-links a:hover { 
+    color: #093D71;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    background-color: white;
+    height: 300px;
+}
+
+.footer-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:  rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+.footer-contact, .footer-location {
+    width:100%;
+    padding-top: 60px;
+}
+
+.footer-contact {
+    padding-left: 20px;
+}
+
+.insta-icon {
+    margin-top: 15px;
+}
+
+/*home page*/
+.wrapper {
+    display:flex;
+    gap: 3px;
+}
+
+.wrapper-two {
+    display:flex;
+}
+
+.content-one {
+    background-color: lightblue;
+    width:100%;
+    height: 350px;
+    margin-left: 3px;
+}
+
+.header-one, .header-two {
+    font-family: "Ultra", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 70px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.header-one {
+    color: #093D71;
+}
+
+.header-two {
+    color: #6d0308;
+}
+
+.shop-button {
+    background-color: white;
+    border-color: #C9181D;
+    border-style: solid;
+    border-width: 1px;
+    color:#C9181D; 
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/*this style will only apply when the shop-button is hovered over*/
+.shop-button:hover {
+    background-color: #C9181D; 
+    color: white;
+}
+
+/*this style will only apply when the .shop-button is clicked*/
+.shop-button:active {
+    opacity: 0.7;
+}
+
+.content-two {
+    width:100%;
+    height: 350px;
+    margin-right: 3px;
+}
+
+.sprinkle-pic {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-three, .content-four {
+    width: 25%;
+    height: 350px;
+    margin-top: 3px;
+}
+
+.content-three {
+    margin-left: 3px;
+}
+
+.rolled-dough-pic, .beater-pic {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-four {
+    margin-right: 3px;
+}
+
+.content-five {
+    background-color: lightcoral;
+    width: 50%;
+    height: 350px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+/*our product page*/
+.pg-2-wrapper {
+    display: flex;
+    gap: 3px;
+}
+
+.pg-2-wrapper-two {
+    display: flex;
+    gap: 3px;
+}
+
+.pg-2-wrapper-three {
+    display: flex;
+    gap: 3px;
+}
+.pg-2-content-one, .pg-2-content-five, .pg-3-content-one {
+    background-color: lightblue;
+    width:100%;
+    height: 600px;
+    margin-left: 3px;
+}
+
+.product-blurb {
+    font-size: 20px;
+    margin-left: 50px;
+    line-height: 25px;
+    margin-top: 50px;
+}
+
+.flavour-heading, .sauce-heading, .ingredient-heading {
+    font-family: "Ultra", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-left: 50px;
+    color: #093D71;
+}
+
+.flavour-heading {
+    margin-top: 20px;
+}
+
+.sauce-heading {
+    margin-top: 25px;
+}
+
+.product-p {
+    margin-left: 50px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.product-name, .product-name-one{
+    font-size: 20px;
+    margin-left: 50px;
+    line-height: 25px;
+}
+
+.product-name-one {
+    margin-top: 15px;
+}
+
+.pg-2-content-two, .pg-2-content-three, .pg-2-content-six {
+    width:100%;
+    height: 600px;
+}
+
+.pg-2-content-two {
+    margin-right: 3px;
+}
+
+.dough-pic, .cookie-dough-pic, .cookie-batter-pic, .cake-batter {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pg-2-content-three {
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.pg-2-content-four, .pg-3-content-two {
+    background-color: lightcoral;
+    width: 100%;
+    height: 600px;
+    margin-right: 3px;
+}
+
+.pg-2-content-four {
+    margin-top: 3px;
+}
+
+.price-heading, .price-heading-two, .contact-heading {
+    font-family: "Ultra", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 70px;
+    margin-left: 50px;
+    color: #6d0308;
+}
+
+.price-heading {
+    margin-top: 100px;
+}
+
+.price-heading-two {
+    margin-top: 50px;
+}
+
+.price-p {
+    margin-top: 15px;
+    margin-left: 50px;
+    line-height: 25px;
+}
+
+.pg-2-content-five {
+    margin-top: 3px;
+}
+
+.ingredient-heading {
+    margin-top: 130px;
+}
+
+.pg-2-content-six {
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+/*Contact us page*/
+.pg-3-wrapper {
+    display:flex;
+    gap: 3px;
+}
+
+.contact-heading {
+    margin-top: 80px;
+    margin-left: 60px ;
+}
+
+.contact-pg-gmail{
+    transition: background-color 0.15s, color 0.15s;
+    margin-left: 60px;
+}
+
+/*this style will only apply when the gmail is hovered over*/
+.contact-pg-gmail:hover {
+     color: #093D71;
+}
+
+.contact-page-p {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.email-button {
+    background-color: white;
+    border-color: #C9181D;
+    border-style: solid;
+    border-width: 1px;
+    color:#C9181D; 
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 60px;
+    margin-top: 35px;
+}
+
+.email-button:hover{
+    background-color: #C9181D;
+    color: white;
+}
+
+.email-button:active{
+    opacity: 0.7;
+}
+

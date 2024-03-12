@@ -1,0 +1,230 @@
+/* body styles */
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #faffde;
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Title styles */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color:	#ffffff;
+    font-family: 'Gluten', cursive;
+    font-size: 50px;
+}
+
+/* From all the links */
+a {
+    color: inherit;    /* remove the blue colour */
+}
+
+.hanger {
+    width: "50px";
+    height: auto;
+}
+
+.card1image{
+    width: "5%";
+}
+
+.list{
+    list-style: none;
+}
+
+.footer{
+    font-family:  'Pangolin', cursive;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* horizontal center */
+    background-color: #fbd3f1;
+    padding: 10px;
+    margin-bottom: 20px; /* gap before the main */
+    background: linear-gradient( #FCA3C7, #c2b7f0);
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+
+/* Flexbox the nav */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* horizontal center */
+    background-color: #fbd3f1;
+    padding: 10px;
+    margin-bottom: 20px; /* gap before the main */
+    font-family: 'Gluten', cursive;
+    font-size: 20px;
+    background: linear-gradient( #FCA3C7, #c2b7f0);
+    border-style: solid;
+    border-color: white;
+}
+
+nav a {
+    text-decoration: none; /* remove the underline */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center; /* center the text */
+}
+
+nav a:hover{
+    border-style: dashed;
+    background-color: #FCA3C7;
+}
+
+/* Flexbox the main three cards a row */
+main {
+    display: flex;
+    flex-wrap: wrap;    /* split items onto next row */
+    justify-content: space-between;
+}
+
+page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Card styles as a column */
+.card {
+    flex-basis: 28%;    /* three items per row */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fbd3f1;
+    border-radius: 4px;
+    color: #ffff;
+    justify-content: center;
+    align-content: space-between;
+    font-family: 'Pangolin', cursive;
+    background: linear-gradient( #FCA3C7, #c2b7f0);
+    border-style: solid;
+    border-color: white;
+    /* flex-wrap: wrap;
+    /* Flexbox the card */
+}
+
+/* Card styles as a column */
+.card_index {
+    flex-basis: 45%;    /* three items per row */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fbd3f1;
+    border-radius: 4px;
+    color: #ffff;
+    justify-content: center;
+    align-content: space-between;
+    font-family: 'Pangolin', cursive;
+    background: linear-gradient( #FCA3C7, #c2b7f0);
+    border-style: solid;
+    border-color: white;
+    /* flex-wrap: wrap;
+    /* Flexbox the card */
+}
+
+
+.card h2 {
+    font-family: 'Gluten', cursive;
+}
+
+.card a:hover{
+    background-color: #FCA3C7;
+    border-style: dashed;
+}
+
+.card1 a:hover{
+    border-style: dashed;
+}
+
+/* Card styles as a column */
+.card1 {
+    flex-basis: 100%;    /* three items per row */
+    
+    /* Flexbox the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fbd3f1;
+    border-radius: 4px;
+    color: #ffff;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+    background: linear-gradient( #FCA3C7, #c2b7f0);
+    border-style: solid;
+    border-color: white;
+} 
+
+.card-image {
+    flex: 2; /* set each image to consistent height */
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: white;
+}
+
+.card-image hover{
+    width: 20px;
+    height: auto;
+}
+
+.card-content {
+    flex: 1;
+    vertical-align: text-top;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffff;
+}
+
+.card-content p {
+    margin-bottom: 5px;
+    color: #ffff;
+    opacity: 1;
+}
+
+/* Profile page */
+.person {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.person h2 {
+    flex-basis: 100%;    /* make the h2 take up the whole row */
+    text-align: center;
+}
+
+
+/* Style the portrait in the profile page */
+.person img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.logo img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}

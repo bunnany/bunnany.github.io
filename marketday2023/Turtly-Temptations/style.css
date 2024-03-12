@@ -1,0 +1,173 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Preahvihear', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 115px;
+    color: white;
+    font-family: 'Vina Sans', cursive;
+    padding-top: 95px;
+}
+p{
+    text-align: center;
+    font-size: 25px; 
+    font-style: italic;
+    color: white;
+}
+.navbar{
+    margin: 68px auto 0;
+    text-align: center;
+}
+.navbar a{
+    width: 200px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 0;
+    color: white;
+    border: 0.5px solid #ffffff;
+    position: relative;
+    z-index: 1;
+    font-size: 17px;
+}
+.navbar a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d0ba9a;
+    z-index: -1;
+    transition: 0.5s;
+}
+.navbar a:hover span{
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0.3,0.2), #caddca ), url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#sideNav{
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #dbd285);
+    z-index: 2;
+    font-family: 'Vina Sans', cursive;
+    font-size: 22px;
+}
+#sideNav a:hover{
+    text-decoration: underline;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.img-roll{
+    width: 400px;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+    border: 8px ridge #d0ba9a;  
+    padding: 5px; 
+}
+h2{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family: 'Vina Sans', cursive;
+}
+.img-scroll{
+    width: 220px;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+    border: 8px ridge #d0ba9a;  
+    padding: 5px; 
+}
+.insNav{
+    margin: 35px auto 0;
+    text-align: center;
+}
+.insNav a{
+    width: 280px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 0;
+    color: white;
+    border: 0.5px solid #ffffff;
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    font-family: 'Vina Sans', cursive;
+}
+.insNav a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d0ba9a;
+    z-index: -1;
+    transition: 0.8s;
+}
+.insNav a:hover span{
+    width: 100%;
+}
+li2{
+    text-align: center;
+    font-size: 18px; 
+    color: white; 
+    display: inline-block;
+    padding-top: 15px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+p1{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-top: 15px;
+}
+.scroll{
+    text-align: center;
+    color: white;
+}
+p2{
+     text-align: center;
+    font-size: 30px; 
+    font-weight: bold;
+    color: white;
+    font-family: 'Vina Sans', cursive;
+}
+p3{
+    text-align: center;
+    font-size: 30px; 
+    font-weight: bold;
+    color: white;
+    font-family: 'Vina Sans', cursive;
+}
+p4{
+    text-align: center;
+    font-size: 38px; 
+    font-weight: bold;
+    color: white;
+    font-family: 'Vina Sans', cursive;
+}
