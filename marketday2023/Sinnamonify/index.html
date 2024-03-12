@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinnamonify</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/productlogo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <a href="" class="cinnamon"><img src="images/cinnamon.jpg" width="640" height="334" alt=""></a>
+    <div class="text-box">
+        <h1>Spice in every bite <br> Cinnamon snakes Delight </h1>
+        <p>With every bite flavour fills the mouth, what a delight!</p>
+        <a href="aboutus.html" class="sinna">Visit us to know more</a>
+    </div>
+    
+</section>
+
+<section class="website">
+    <h1>Included in this website</h1>
+    <p>Sinnamonify! Enjoy your day with a Sinnamon snake, let yourself have some fun!</p>
+
+    <div class="row">
+        <div class="website-inc">
+            <h3>MENU</h3>
+            <a href="menu.html" class="click">Click here for the MENU page</a>
+            <a href="menu.html" class="menu"><img src="images/menu.jpg" width="333" height="220" alt=""></a>
+        </div>
+        <div class="website-inc">
+            <h3>ABOUT US</h3>
+            <a href="aboutus.html" class="click">Click here for the ABOUT US page</a>
+            <a href="aboutus.html" class="about-us"><img src="images/aboutus.jpg" width="333" height="220" alt=""></a>
+        </div>
+        <div class="website-inc">
+            <h3>CONTACT</h3>
+            <a href="contact.html" class="click">Click here for the CONTACT page</a>
+            <a href="contact.html" class="contact"><img src="images/contact.jpg" width="333" height="220" alt=""></a>
+        </div>
+    </div>
+</section>
+
+    
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+
+    
+</body>                                           
+</html>

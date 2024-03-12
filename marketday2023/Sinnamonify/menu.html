@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinnamonify</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+<section class="menu-header">
+    <nav>
+        <a href="aboutus.html"><img src="images/productlogo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>Menu</h1>
+    
+</section>
+
+<section class="menu1">
+    <div>
+        <h2>Sinnamon snakess</h2>
+        <p>Our Sinnamon snakess as you probably can guess from the name <br> is a cinnamon bun shaped like a snake. The snakes are easy to <br> eat as they are stuck on a stick for convience purposes. Your <br> hands won't get dirty after eatting the snake! It is both <br> savoury and sweet, so you won't have to make a difficult decision <br> of sweet or savoury when you can have both with the <br> Sinnamon snakess!</p>
+    </div>
+    <a href="" class="pic"><img src="images/snakeog.jpeg" width="300" height="400" alt=""></a>
+    <div>
+        <h3>Price</h3>
+        <p>Each Sinnamon snakess are $2.<br>Very cheap and affordable!<br>Make sure you come by for a bite! </p>
+    </div>
+</section>
+    
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+</body>                                           
+</html>

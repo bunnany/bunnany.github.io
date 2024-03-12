@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinnamonify</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="aboutus.html"><img src="images/productlogo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>About Us</h1>
+    
+</section>
+
+<section class="about-us">
+    <h2>Owners of this business</h2>
+    <p>Owners of Sinnamonify!</p>
+
+    <div class="lay">
+        <div class="roles">
+            <h3>Penny Jorgensen</h3>
+            <a class="penny"><img src="images/profile.PNG" width="333" height="220" alt=""></a>
+            <a class="char">Penny Jorgensen is our marketing manager, they make all the posters, logos and designs that are needed for our business. Penny is the creator of our amazing mascot, Sinna!</a>
+            
+        </div>
+        <div class="roles">
+            <h3>Rebecca Green</h3>
+            <a class="rebecca"><img src="images/profile.PNG" width="333" height="220" alt=""></a>
+            <a class="char">Rebecca Green is our finance manager, they make sure that the amount of money we are using is a suitable price for each items. Rebecca keeps us on track of what to buy and not to buy so that we make enough profit!</a>
+        </div>
+        <div class="roles">
+            <h3>Gabby Robertshawe</h3>
+            <a class="gabby"><img src="images/profile.PNG" width="333" height="220" alt=""></a>
+            <a class="char">Gabby Robertshawe is our record keeper, they manage our instagram page so that the consumers can be kept updated with the progress of our business. Gabby also keeps score of how much product we have sold, takes care of all the pre-order costs, and makes sure that we are on track with our business launching date, keeping us on time.</a>
+        </div>
+        <div class="roles">
+            <h3>Holly Mounsey-Smith</h3>
+            <a class="holly"><img src="images/profile.PNG" width="333" height="220" alt=""></a>
+            <a class="char">Holly Mounsey-Smith is our production manager, they are in charge of ensuring that all the baking is done correctly. Holly is our head chef during our baking sessions so they have to be a good baker!</a>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <div>
+        <h3 class="headers">Location</h3>
+        <p class="location">Stall number 15<br>Come visit us at the brook courts!</p>
+    </div>
+
+    <div>
+        <h3 class="mascot">Mascot</h3>
+        <p class="discribtion">Hello, I am Sinna the mascot for Sinnamonify! <br> I love my job as the mascot since I get free cinnamon rolls! <br> Come by stall 15 to grab your own Sinnamon snake!</p>
+        <a class="snake"><img src="images/sina.png" width="459" height="400" alt=""></a>
+    </div>
+</section>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+
+    
+</body>                                           
+</html>

@@ -1,0 +1,238 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    padding: 5px; 
+    width: 70%; /* So that content takes up 70% of the browser window */
+    margin: 0 auto; /* Centers the content in the browser window */
+    background-image: linear-gradient(to right, #c83631,#c8493f, #c83631); /* adds a gradient for the background */
+}
+
+.image_homepage {
+    margin: 3px;
+    border-radius: 5px; /* The amount of pixels the corners of the border are curved by */
+    border-width: 3px; /* The width of the border */
+    border-color: #ddb86e; /* The colour of the border */
+    border-style: solid; /* The type of border, with solid being a solid connected line for the border */
+    width: 100%; /* So that content takes up 100% of the section */
+}
+
+.image_subpage { /* Please refer to .image_homepage for information on border code and width */
+    margin: 3px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: #ddb86e;
+    border-style: solid;
+    width: 46%;
+}
+
+h1, h2 {
+    text-align: center; /* Horizontally centers text in the h1 section */
+    color: #272727; /* Sets the colour of the text */
+    font-family: 'Abril Fatface', cursive; /* Changes the font in the h1 and h2 */
+}
+
+p {
+    font-family: 'Ruwudu', serif; /* Changes the font for anything text under p */
+    font-size: 21px; /* Changes the font size */
+}
+
+iframe {
+    width: 670px; /* Changes width to desired amount of pixels */
+    height: 300px; /* Changes height to desired amount of pixels */
+}
+
+.logo { /* Reduces the size of the logo to fit the header section better */
+    width: 12%; 
+    height: 12%; 
+}
+
+.instagram_logo { /* Reduces the size of the Instagram logo to fit the footer better */
+    width: 7%;
+    height: 4%;
+}
+
+.title { /* Please refer to .image_homepage for information on border code */
+    border-radius: 5px;
+    border-width: 2px;
+    border-color:  #ddb86e;
+    border-style: solid;
+    background-color: #c85e53; /* Changes the background colour of the div */
+    display: flex; /* Allows for flexbox to be used */
+    justify-content: center; /* Centers the content in the div */  
+}
+
+.main_title {
+    width: 80%; /* So that content takes up 80% of the div */
+}
+
+nav { /* Please refer to .image_homepage for information on border code */
+    border-radius: 5px;
+    background-color: #ddb86e;
+
+}
+
+nav ul { 
+    display: flex; /* Allows for flexbox to be used */
+    justify-content: center; /* Centers the content in the div */  
+    list-style: none; /* Takes away the bullet points for each list item */
+}
+
+nav li {
+    margin: 25px;
+}
+
+nav li a { 
+    color: #272727; /* Changes colour of text */
+    font-family: 'Ruwudu', serif; /* Changes the font of the text */
+    font-size: 21px; /* Changes the font size */
+    line-height: 1.2; /* Reduces the space between each line */
+    text-decoration: none; /* Takes the line underneath links out */
+    display: block; /* Creates a block to make the styling of content easier */
+}
+
+nav li a.active {
+    font-weight: bold; /* Makes the font bolder */
+    color: #c83631;
+}
+    
+.direction { 
+    display: flex;
+    flex-direction: row; /* Changes the content within the div to put the content next to each other instead of on top */
+}
+
+.margin {
+    margin: 20px;
+}
+
+main {
+    padding: 5px;
+}
+
+.center_text {
+    display: flex;
+    text-align: center; /* Aligns all text in the center of all articles */
+    flex-direction: column; /* Puts content on top of each other instead of next to each other */
+     color: #272727;
+}
+
+.main_body { /* Please refer to .image_homepage for information on border code */
+    border-width: 2px;
+    border-color:  #ddb86e;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #c85e53; /* Changes background colour of the article */
+}
+
+.sub_article { /* Please refer to nav ul and .main_title for information on flex and width */
+    display: flex;
+    flex-direction: column; /* Makes the content stack on top each other instead of next to each other */
+    color: #272727; /* Changes colour of text */
+    width: 48%;
+    padding: 20px;
+}
+
+.sub_page { /* Please refer to nav ul, .image_homepage, .direction and .sub_article for information on flex, flex-direction, border code and colour */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    margin: 1px;
+    color:  #272727;
+    border-width: 2px;
+    border-color: #ddb86e;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #c85e53;
+}
+
+.sub_text { /* Please refer to .image_homepage and .sub_article for information on flex-direction and width */
+    display: flex; /* Allows for flexbox to be used */
+    flex-direction: column;
+    align-items: center; /* Centers text vertically in section */
+    width: 80%;
+}
+
+.text {
+    width: 90%; /* So that content takes up 80% of the div */
+}
+
+.preorder a { /* Please refer to .image_homepage and .sub_article for information on flex-direction and border code */
+    border-width: 2px;
+    border-color: #ddb86e;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #c8716d; /* Changes the background colour of the block */
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none; /* Takes out the underline beneath links */
+    color: #272727; /* Changes the colour of text */
+}
+
+.preorder a:hover { /* Changes the colour of the background when the block is hovered over */
+    background-color: #ddb86e; 
+}
+
+footer {
+    padding: 10px;
+    border-radius: 5px; /* The amount of pixels the corners of the border are curved by */
+    background-color: #ddb86e; /* Changes the  background colour of the footer */
+    display: flex;
+    flex-direction: row; /* Changes the content within the div to put the content next to each other instead of on top */
+}
+
+footer p {
+    color: #272727; /* Changes the colour of text */
+    display: block; /* Creates a block to make the styling of content easier */
+} 
+
+footer a {
+    text-decoration: none; /* Takes the line underneath links out */
+    color: #272727; /* Changes the colour of text */
+}
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+    
+    body {
+        width: 100%;
+        margin: 0 auto; /* Centers the content in the browser window */
+    }
+    .sub_page {
+        padding: 0px;
+    }
+    
+    div {
+        width: 100%;
+        position: relative;
+    }
+
+    iframe {
+        width: 40%;
+        height: 30%;
+    }
+    
+    nav li {
+        margin: 1px;
+    }
+    
+    h1, h2 {
+        font-size: 140%;
+    }
+
+    .logo {
+        height: 20%;
+        width: 20%;
+    } 
+
+    nav {
+        max-height: 100%;
+    }
+
+    .images {
+        width: 85%
+    } 
+
+}
