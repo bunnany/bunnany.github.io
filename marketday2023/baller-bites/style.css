@@ -1,0 +1,342 @@
+html {
+  height: 200%;
+  width: 200%;
+}
+h2 {
+  text-shadow: 2px 2px;
+}
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+  background-color: gray;
+  background-image: url("https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: 2000px 185%;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  height: 200px;
+  color: #151414;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  
+  text-align: center;
+  color: white;
+font-family: 'DM Serif Display', serif;
+font-size: 60px;
+  height: 200px;
+  
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  
+  box-sizing: border-box;
+  
+}
+body{
+  font-family: montserrat;
+  }
+nav{
+  background-color: #FC7222;
+  
+  height: 80px;
+  width: 100%;
+  }
+label.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 90px;
+ 
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  list-style-type: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 23px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  
+}
+a.active,a:hover{
+  
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+  }
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30 px;
+    
+     }
+  nav ul li a{
+    font-size: 16 px;
+    }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+  width: 100%;
+    height: 100vh;
+   
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+a{
+  background-position: center;
+}
+img{
+  border: 2px double black;
+  background-position: center;
+position: absolute;
+  bottom: 245px;
+  right: 100px;
+  float: right;
+  height: 235px;
+}
+
+.container{
+  display: flex;
+}
+.logo img{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 8%;
+  height: 80px;
+  bottom: 850px;
+  right: 1700px;
+ }
+section{
+  text-align: right;
+ position: relative;
+ left: 80px;
+  top: 50px;
+  width: 35%;
+  font-family: 'Dai Banna SIL', serif;
+  font-size: 25px;
+  background-color: #FEC9F1;
+  width: 40%;
+  
+}
+.red{
+  
+  position: absolute;
+ right: 100px;
+  top: 600px;
+  width: 35%;
+  left: 570px;
+  
+}
+
+.pink{
+  border: double;
+  
+  position: relative;
+  left: 80px;
+top: 100px;
+  font-size: 20px;
+}
+.gold{
+  border: double;
+  list-style-type: none;
+  position: relative;
+  left: 80px;
+ top: 100px;
+  background-color: beige;
+  font-size: 20px;
+  
+}
+table{
+  width: 90%;
+}
+.green{
+  right: 100px;
+  top: 280px;
+  height: 200px;
+}
+.brown{
+  position: absolute;
+  top: 153%;
+  left: 59%;
+}
+p{
+  font-size: 28px;
+}
+
+
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+background-image: url('https://images.pexels.com/photos/33715/cake-pops-pastries-cake-sweet.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-repeat: no-repeat;
+  background-size: 1950px;
+  height: 100px;
+  width: 100%;
+  color: white;
+}
+/* Column container */
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+section{
+  border-style: dashed;
+  
+/* Gap between sections */
+margin: 5px;
+  text-align: center;
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+
+
+.content{
+  display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.content h1{
+  font-size: 95px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.content a{
+  font-size: 23px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.content a:hover{
+  background-color: #fff;
+  color: #000;  
+}
+/*Target a class*/
+.gold{
+  background-color: beige;
+}
+/*Target a class*/
+.pink{
+  background-color: #F58351;
+}
+.blue{
+  background-image: url("https://images.unsplash.com/photo-1560081223-734e568800b7?ixlib=rb4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1893&q=80");
+  background-repeat: no-repeat;
+  background-size: 1950px;
+ background-size: 1950px;
+ position: absolute;
+  top: 300px;
+}

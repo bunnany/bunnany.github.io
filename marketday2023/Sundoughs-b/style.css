@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+  width: 100%;
+    }
+.Home_Page{ background-color:#fffc9e ;
+      color: #ff8c00;
+    margin: 0 auto;
+    width: 960 px; 
+    }
+
+.Fire_Sign_Page { background-color: #ff8c00; 
+                color: #f8da49}
+.Earth_Sign_Page {background-color: #ddd2c0;
+                 color: #607d3b}
+.Water_Sign_Page { background-color: #ebfdfe;
+                 color: #00a9bc}
+.Air_Sign_Page { background-color: #e9f1f5;
+               color: #e6b7cb}
+.Contact_Page{ background-color: #ff8c00;
+             color: #f8da49;}
+
+.Navigation_Text {background-color: #bdfeff;
+                 border-style: solid;
+                 border-color: #77dcef;
+                 border-width: 20px;
+                 border-radius: 5px;}
+.Navigation_Background {background-color: #77dcef; }
+
+body { text-align: center;}
+
+.Contact_Page{ background-color: #fffc9e;
+             color: #ff8c00;
+             margin: 0 auto;}
+.HomePage_Body_Text {
+  background-color: #ffffd1;
+  padding: 30px;
+  border-style: solid;
+                 border-color: #fffc9e;
+                 border-width: 30px;
+                 border-radius: 5px;
+}
+/*Making My Nav*/ 
+ nav{background-color: #77dcef;
+    width: 2000 px;}
+nav ul {  
+  display: flex;
+justify-content: center;
+list-style: none;
+padding:0px;
+}
+.logo {display: flex;
+justify-content: flex-start;
+list-style: none;
+padding:0px;}
+
+nav li { 
+  margin: 20px; 
+  display: flex;
+justify-content: center;
+list-style: none;
+padding:20 px;
+}
+
+nav li a { 
+  display: block;
+color: #00a7d1; 
+  text-decoration: none; 
+padding: 10 px; 
+}
+
+/* Fonts */
+h1{font-family: 'Caprasimo',cursive;}
+h3{font-family: 'Caprasimo',cursive;}
+ul{font-family: 'Josefin Sans', sans-serif;}
+p{font-family: 'Josefin Sans', sans-serif;}
+nav li{font-family: 'Josefin Sans', sans-serif;}
+HomePage_Body_Text {font-family: 'Josefin Sans', sans-serif;}
+
+.Flex-box-Container-Air-Signs { display: flex;
+                              padding: 50px;}
+/*Description*/ 
+.Ingredient-List_Air {flex: 1;
+                 vertical-align: text-top;
+                 border-top: dotted;
+                 border-color: white;
+                 border-width: 5px;
+                }
+
+.Ingredient-List_Fire {flex: 1;
+                 vertical-align: text-top;
+                 border-top: dotted;
+                 border-color: #ff000d;
+                 border-width: 5px;
+                }
+
+.Ingredient-List_Earth {flex: 1;
+                 vertical-align: text-top;
+                 border-top: dotted;
+                 border-color: #d0f0c0;
+                 border-width: 5px;
+                }
+
+.Ingredient-List_Water {flex: 1;
+                 vertical-align: text-top;
+                 border-top: dotted;
+                 border-color: #fdee73;
+                 border-width: 5px;
+                }
+
+
+.Description-of-the-cookie-dough_Air {flex: 1;
+                                 vertical-align: text-top;
+                                 border-top: dotted;
+                                 border-color: white;
+                                 border-width: 5px;
+                                  border-left: 4px dotted white;}
+
+.Description-of-the-cookie-dough_Fire {flex: 1;
+                                 vertical-align: text-top;
+                                 border-top: dotted;
+                                 border-color: #ff000d;
+                                 border-width: 5px;
+                                  border-left: 4px dotted #ff000d;}
+
+.Description-of-the-cookie-dough_Earth {flex: 1;
+                                 vertical-align: text-top;
+                                 border-top: dotted;
+                                 border-color: #d0f0c0;
+                                 border-width: 5px;
+                                  border-left: 4px dotted #d0f0c0;}
+
+.Description-of-the-cookie-dough_Water {flex: 1;
+                                 vertical-align: text-top;
+                                 border-top: dotted;
+                                 border-color: #fdee73;
+                                 border-width: 5px;
+                                  border-left: 4px dotted #fdee73;}
+
+
+
+
+

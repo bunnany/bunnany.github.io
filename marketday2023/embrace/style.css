@@ -1,0 +1,267 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #d6f6dd;
+}
+
+.logo {
+  width: 75px;
+}
+
+.background {
+  background-image: linear-gradient(0deg, rgba(214,246,221,0.7), rgba(224,102,102,0.7)),url(img/background2.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-image: linear-gradient(0deg, rgba(224,102,102,0.7), rgba(214,246,221,0.7)),url(img/flower.png);
+  background-position: center;
+  background-size: cover;
+  text-align: start;
+  color: #fff;
+  
+}
+
+#text-home {
+  padding-right: 80px;
+}
+
+#image:hover {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+  
+}
+
+#image {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h2 {
+  color: #e06666;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: solid #e06666;
+}
+
+
+
+
+/* nav bar */
+nav {
+  background-color: #d6f6dd;
+  display: flex;
+  justify-content: flex-start;
+  border: solid;
+  border-color: #e06666;
+  height: 70px;
+}
+
+nav a {
+  text-decoration: none;
+  list-style: none;
+  color: #e06666;
+  font-family: 'unna', serif;
+  font-size: 30px;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+  margin: 5px;
+  padding: 10px;
+  
+}
+
+.links {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+nav li a:hover {
+
+  background-color: #ffd97f;
+  border-radius: 25px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+  color: white;
+
+}
+
+.active {
+  background-color: #ffd97f;
+  border-radius: 25px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  color: white;
+}
+
+.main-text {
+  width: 500px;
+}
+
+.contact-text {
+  width: 900px;
+}
+
+p {
+  font-family: 'unna', serif;
+  font-size: 28px;
+  color: #d6f6dd;
+  width: 800px;
+}
+
+.img_cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.card:hover {
+  box-shadow: 0px 10px 20px 12px #ffd97f;
+  transform: scale(1.10, 1.10);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+  transition-property: all;
+  
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  
+}
+
+
+.safety-list {
+  font-family: 'unna', serif;
+  font-size: 22px;
+  color: #d6f6dd;
+  width: 500px;
+}
+
+#text-safety {
+  background: rgba(224, 102, 102, 0.8);
+  padding: 20px;
+  border-radius: 25px;
+
+}
+
+
+#text {
+  background: rgba(224, 102, 102, 0.8);
+  padding: 40px;
+  border-radius: 25px;
+  width: 1000px;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  gap: 30px;
+}
+
+.bracelets {
+  width: 280px;
+  height: 280px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+}
+
+.bracelets:hover {
+  box-shadow: 0px 10px 20px 12px #ffd97f;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+  transform: scale(2, 2);
+}
+
+#instagram {
+  width: 100px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+}
+
+#instagram:hover {
+  width: 100px;
+  transform: scale(1.4, 1.4);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+}
+
+#instagramnav {
+  width: 40px;
+  display: flex;
+}
+
+#instagramnav:hover {
+  width: 40px;
+  display: flex;
+  transform: scale(1.4, 1.4);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  transition-property: all;
+}
+
+.team {
+  width: 400px;
+}
+
+.contactlink {
+  color: #ffd97f;
+}
+
+.instagram {
+  display: flex;
+}
