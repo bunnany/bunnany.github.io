@@ -1,0 +1,114 @@
+
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body{
+  background-color: #ffd500;
+}
+a {
+    text-decoration: none; /* remove the underline */
+    color: inherit;    /* remove the blue colour */
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    align-items:center; /* horizontal center */
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom: 10px; /* gap before the main */
+    border-width:10px ;
+    border-radius:10px ;
+    
+}
+
+nav a {
+    display: flex;
+    justify-content:space-around;
+    text-decoration: none; /* remove the underline */
+    color: #ff57db;
+    padding: 10px;
+    text-align: center; /* center the text */
+    font-size: 25px;
+  border-style: inset;
+  background-color: black;
+  
+  
+    
+}
+
+#photo {
+  width:20%;
+}
+
+.logo{
+  
+  width:15%;
+  border-radius: 50px;
+  
+}
+
+.placeholder {
+  display: flex;
+  width: 20%;
+  border-radius: 10%;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+
+
+
+h3{
+  color: #ff8800;
+
+}
+
+
+.secondplace{
+  display:flex;
+  justify-content: center;
+  width: 45%;
+  height: auto;
+  border-radius: 100px;
+  border-color: red;
+}
+
+.mm{
+ 
+  width:100%;
+
+}
+
+
+.hip{
+  width: 20%;
+  border-radius:10%;
+}
+
+
+.emo{
+  width: 20%;
+  border-radius:10%;
+}
+
+.homeimg{
+  width: 70%;
+}
+
+h1{
+  text-align: center;
+  border-style: dotted;
+  
+}
+
+.abcdef{
+  width:31%;
+  border-radius: 20px;
+  border-style: inset;
+  border-color: #d400ff;
+}

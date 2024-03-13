@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab and Snap</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- adding font material -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cabin:ital,wght@0,400;0,700;1,500;1,700&family=Poppins:ital,wght@0,100;0,400;0,900;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<link rel="shortcut icon" type="image/png" href="img/logo.png" <body>
+<!-- nav bar material -->
+<header>
+    <nav>
+        <a href="index.html"><img src="img/logo.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hidenav()"></i>
+            <ul class="menu">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="product.html">Product</a></li>
+                <li class="contact"><a href="contact.html">Contact</a></li>
+                <li class="preorder"><a href="preorder.html">Preorder</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="shownav()"></i>
+    </nav>
+</header>
+<!-- adding font material -->
+<main>
+    <h1 class="heading">Product</h1>
+    <div class="spider-title">
+        <h3>Spider</h3>
+    </div>
+    <div class="spider-con">
+        <div class="box1">
+            <img src="img/emo-logo.png" alt=Spider 1">
+            <h2>Emo</h2>
+            <p>Our emo spider contains:</p>
+            <li class="product-li"> Coca-Cola</li>
+            <li class="product-li">Vanilla Ice Cream</li>
+            <li class="product-li">Crushed Oreos</li>
+            <li class="product-li">Milk Chocolate</li>
+        </div>
+        <div class="box2">
+            <img src="img/hippie-logo.png" alt=Spider 2">
+            <h2>Hippie</h2>
+            <p>Our hippie spider contains:</p>
+            <li class="product-li"> Sprite</li>
+            <li class="product-li">Vanilla Ice Cream</li>
+            <li class="product-li">M&Ms</li>
+            <li class="product-li">Milk Chocolate</li>
+        </div>
+        <div class="box3">
+            <img src="img/pop-logo.png" alt=Spider 3">
+            <h2>Popular</h2>
+            <p>Our pop spider contains:</p>
+            <li class="product-li"> Rasberry fizzy</li>
+            <li class="product-li">Vanilla Ice Cream</li>
+            <li class="product-li">Pink sprinkles</li>
+            <li class="product-li">Milk Chocolate</li>
+        </div>
+    </div>
+
+    <div class="cookie-title">
+        <h3>Cookie</h3>
+    </div>
+    <div class="cookie-con">
+        <div class="cookie-box-centre">
+            <p>Our chocolate chip cookie contains:</p>
+            <ul>
+                <li class="product-li">Plain flour</li>
+                <li class="product-li">Chocolate chips</li>
+                <li class="product-li">Vanilla Extract</li>
+                <li class="product-li">White Sugar</li>
+                <li class="product-li">Condensed Milk</li>
+                <li class="product-li">Baking soda</li>
+                <li class="product-li">Butter</li>
+            </ul>
+        </div>
+    </div>
+</main>
+</body>
+<!-- show and hide nav bar for smaller screens -->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function shownav() {
+        navlinks.style.right = "0"
+    }
+    function hidenav() {
+        navlinks.style.right = "-200px"
+    } 
+</script>
+
+
+</body>
+
+</html>

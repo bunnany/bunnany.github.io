@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* text fonts and colours */
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    color: #ffffff;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    color: #ffffff;
+    font-size: 70px;
+    padding: 20px;
+}
+
+h3 {
+    font-family: 'Righteous', cursive;
+    color:#fefe7c;
+    text-align: center;
+    align-self: center;
+    font-size: 70px;
+}
+p {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 150%;
+}
+.card a {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+footer {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+ul {
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+}
+
+/* link colours */
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #fefe7c;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+li a:hover {
+    color: #fefe7c;
+    transform: scale(1.60, 1.60);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+/* flexbox*/
+nav {
+    border-radius: 20px;
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border: solid;
+    background-color: #ea5d5d;
+    text-decoration: none;
+}
+
+nav li a {
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+nav li{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+body {
+    background-color: #96b2df;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: #ea5d5d;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+.card p {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.card img {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50%;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 20px;
+}

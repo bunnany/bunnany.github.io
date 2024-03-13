@@ -1,0 +1,287 @@
+/*Adding font*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*background img*/
+body {
+    min-height: 140vh;
+    width: 100%;
+    background-image: url(img/rootbeer-small.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e3e3e377;
+}
+
+/*Nav bar background*/
+nav {
+    background: #292828;
+    display: flex;
+    padding: 2px, 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Lining the nav bar links right*/
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    background-color: transparent;
+    font-size: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px 30px;
+}
+
+/*Nav bar link charecter editing*/
+.nav-links ul li a {
+    color: #ededed;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+/*Nav bar hover line*/
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d4d4d4;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+/*Nav bar hover line cont...*/
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/*Sizing of nav logo*/
+nav img {
+    width: 130px;
+}
+
+/*home page text edit*/
+.content {
+    width: 90%;
+    color: #e8e5cf;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 68px;
+    text-shadow: 3px 2px #43290b;
+
+}
+
+.content p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    text-shadow: 2px 2px #43290b;
+}
+
+.main-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    color: #e8e5cf;
+
+}
+
+.main-btn:hover {
+    border: 1px solid #d6d6d6;
+    background: #d6d6d6;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+/*home page text edit*/
+.camera-container {
+    width: 900px;
+    height: auto;
+    display: relative;
+    margin: 700px auto 0;
+
+}
+
+.camera-img {
+    width: 1000px;
+    height: auto;
+    display: block;
+    opacity: 0.9;
+
+}
+
+.camera-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 2px #43290b;
+    color: #c4bfb1;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/*Product heading alignment*/
+
+
+.heading {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+    color: #c4bfb1;
+    text-shadow: 3px 2px #43290b
+}
+
+.spider-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: #e3e3e3;
+    text-shadow: 3px 2px #43290b
+}
+
+.cookie-title {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 45px;
+    color: #e3e3e3;
+    text-shadow: 3px 2px #43290b
+}
+
+.spider-con {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box1,
+.box2,
+.box3 {
+    border: 4px solid;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px)
+}
+
+.cookie-con {
+    margin: auto;
+}
+
+.cookie-box {
+    border: 4px solid;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: 10%;
+}
+
+.cookie-box-centre {
+    border: 4px solid;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.33% - 30px);
+    margin: auto;
+}
+
+.box1 img,
+.box2 img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.box3 img {
+    max-width: 150px;
+}
+
+.box1 h2,
+p,
+.box2 h2,
+p,
+.box3 h2,
+p {
+    color: #c7c7c7;
+    text-shadow: 3px 2px #43290b
+}
+
+.product-li {
+    color: #e1e0e0;
+    text-shadow: 2px 2px #43290b;
+    display: block;
+    margin-bottom: 10px
+}
+
+
+/*home page text edit*/
+@media(max-width: 700px) {
+    .content h1 {
+        font-size: 22px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #292828;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
