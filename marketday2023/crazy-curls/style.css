@@ -1,0 +1,170 @@
+/* body styles */
+body {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fbb1bd;
+    height: 100%;
+}
+
+
+/* Title styles */
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+/* From all the links */
+a {
+    text-decoration: none; /* remove the underline */
+    color: inherit;    /* remove the blue colour */
+}
+
+/* Flexbox the nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* horizontal center */
+    background-color: #ff85a1;
+    padding:0px;
+    margin-bottom: 0px; /* gap before the main */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+nav a {
+    display: flex;
+    border-style: outset;
+    border-color: #ff477e;
+    background-color: #ff5c8a;
+    color: #240000;
+    padding: 20px;
+    text-align: center; /* center the text */
+    align-items: center;
+    margin: 5px;
+    
+}
+
+nav a:hover {
+    background-color: #ff0a54;
+    border-color: #ff5c8a;
+    border-style: inset
+
+}
+
+logo {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    align-items: center;
+}
+
+.logo img {
+    display: flex;
+    border-radius: 50%;
+    width: 112px;
+    height: 107px
+
+}
+
+/* big container */
+.container {
+    display: flex;
+    justify-content: center;
+    border-color: #ff477e;
+    background-color: #d53061;
+    border-style: inset;
+    border-width: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+.block-text {
+    font-family: 'DM Serif Display', serif;
+    color: #f7cad0;
+    font-size: 150px
+}
+
+
+/* slogan */
+.slogan {
+    font-family: 'DM Serif Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5c0a22;
+    font-size: 30px;
+}
+
+
+/* Flexbox the main three cards a row */
+.cards {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+
+.card {
+    flex-basis: 45.83%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff0a54;
+    border-style: solid;
+    border-color: #ff7096;
+    border-width: 10px;
+}
+
+.linked-button {
+    background-color: #fbb1bd;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 15px;
+}
+
+.card-about {
+    margin-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+}
+
+/* social bar */
+
+.social-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #ff0a54;
+    padding: 50px
+}
+
+/* info pages */
+
+.info { 
+    display: flex;
+    flex-direction: column;
+    background-color: #ff0a54;
+    border-style: solid;
+    border-color: #ff7096;
+    border-width: 10px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.info-image {
+    display: flex;
+    justify-content: center;
+    margin: 10px
+}
+
+.info-image img {
+    width: 50%;
+    height: auto;
+}
+

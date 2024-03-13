@@ -1,0 +1,245 @@
+/* Set up all pages */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'PT Serif', sans-serif;
+    color: var(--bgColour);
+    margin: 0px;
+    background-color: var(--bgColour);
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Variables */
+:root {
+    --bgColour: #FCF6D5;
+    --primaryColour: #Fdb92a;
+    --additionalColour: #370150;
+}
+
+/* Links */
+a:link,
+a:visited {
+    color: var(--additionalColour);
+}
+
+/* Buttons */
+button {
+    transition: all 0.6s ease;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border-width: 3px;
+    font-family: 'PT Serif', sans-serif;
+    font-size: 20px;
+    margin: auto;
+}
+
+button:hover {
+    opacity: 0.8;
+    border-width: 6px;
+}
+
+.button1 {
+    border-color: var(--additionalColour);
+    background-color: var(--bgColour);
+    color: var(--additionalColour);
+}
+
+.button2 {
+    border-color: var(--bgColour);
+    background-color: var(--additionalColour);
+    color: var(--bgColour);
+}
+
+.button3 {
+    border-color: var(--primaryColour);
+    background-color: var(--bgColour);
+    color: var(--primaryColour);
+}
+
+/* Navbar */
+#logo {
+    margin-top: -20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+
+@media only screen and (min-width: 1100px) {
+    nav {
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    nav {
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #logo {
+        height: 180px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    #logo {
+        height: 100px;
+        margin-top: 6px;
+    }
+}
+
+.menuBar {
+    background-color: var(--additionalColour);
+}
+
+#menuBars {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 1099px) {
+    .menuBar {
+        height: 4px;
+        margin-top: 2px;
+        width: 24px;
+        border-radius: 2px;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+    #menuBars:hover .menuBar {
+        transition-duration: 0.4s;
+        margin-top: 4px;
+    }
+}
+
+#pages:target {
+    transition-duration: 0.4s;
+    opacity: 1;
+    margin-right: 80px;
+    pointer-events: all;
+}
+
+#pages {
+    margin-right: -300px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+@media only screen and (min-width: 1100px) {
+    #pages {
+    pointer-events: all;
+    opacity: 1;
+}
+}
+
+
+#openPage {
+    background-image: url("imgs/safari.jpg");
+    background-size: cover;
+    height: 45%;
+    padding-top: 45%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    color: var(--additionalColour);
+}
+
+#info {
+    padding-top: 3%;
+    color: var(--additionalColour);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+    padding: 10%;
+    background-color: var(--primaryColour);
+}
+
+#info img {
+    height: 500px;
+    padding-left: 10%;
+}
+
+
+#preview {
+    display: flex;
+    background-color: var(--primaryColour);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#previewOptions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.previewoption {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+#lion {
+    color: #f5f1d6;
+}
+
+#flamingo {
+    color: #f976b5;
+}
+
+#tiger {
+    color: #d3693c;
+}
+
+#infoInsta {
+    color: var(--additionalColour);
+}
+
+#insta img {
+    height: 20%;
+}
+
+#insta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+#insta button {
+    width: fit-content;
+}
+
+#aboutUsGroup img {
+    height: 600px;
+}
+
+#aboutUsGroup {
+    padding: 10%;
+    color: var(--additionalColour);
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primaryColour);
+}
+
+#meetGroup {
+    color: var(--additionalColour);
+}
