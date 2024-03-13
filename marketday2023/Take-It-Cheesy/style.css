@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    color: #f3742c;
+    background-color: #f3d363 ;
+    padding: 5px;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.nachoimg {
+    border: 5px solid #e45c04;
+}
+
+.logo {
+    float: left;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Yellowtail', cursive;
+    margin-right: 90px;
+    border-color: #e45c04;
+    border-style: solid;
+}
+
+h2, h3 {
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+}
+
+p {
+    font-family: 'Mynerve', cursive;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.ingredients {
+  text-align: center;
+    font-family: 'Mynerve', cursive;
+}
+
+ul {
+    text-align: center;
+    align-tracks: center;
+    font-family: 'Mynerve', cursive;
+}
+
+ul.myUL {
+     display: inline-block;
+  text-align: center;
+    font-family: 'Mynerve', cursive;
+}
+
+
+nav {
+    color: #f3742c;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Mynerve', cursive;
+}
+
+}
+@media only screen and (max-width:500px) {
+  /*https://www.w3schools.com/html/html_responsive.asp */
+  .menu, .main, .right {
+    width: 100%;
+}
+    
+
+article {
+    border-radius: 80px;
+    border-style: solid;
+    border-color: #e45c04;
+    color: #f3742c;
+}
+section {
+    border-width: 90px;
+    border-color: #e45c04;
+    border-style: solid;
+    float: left;
+}

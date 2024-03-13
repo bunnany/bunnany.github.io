@@ -1,0 +1,79 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+    background-image: url('img/bluehotdog2.png'); /* Photo of blue hot dog */
+    color: #ff0000; /* Colour of main text (red) */
+    font-size:250%; /* Size of text */
+}
+h1 { /* Main heading*/
+    border-style: outset;
+    border-color: #c4c4c4;
+    border-width: 2px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+/* Colour of paragraph */
+p { background-color:#6f7680;
+   color: #012e55;
+    
+}
+
+/* Nav colour*.container*/
+nav{
+    background-color: #6f7680;
+}
+/* It represents the unordered list that contains the nav items*/ 
+nav ul {
+    /* Sets the display : flex;
+
+    /* Centre the nav items to the centre of the of the container*/
+    justify-content: center;
+    list-style: none; /* removes bullet points*/ 
+    padding: 0;
+}
+  /* Represents the anchor liks within each item */ 
+    nav li{
+        margin: 10px;
+    }
+/* How the nav will look */
+nav li a {
+    display: block;
+    color:#c4c4c4;
+    text-decoration: none;
+    padding: 10px;
+}
+/* Remove underline of links*/
+
+/* Define style when hovered over*/ 
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/* The active bar will change colour */
+li a.active {
+  background-color: #b2aeae;
+  color: white; /* Text will turn white */
+}
+/* Put each section to together*/
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+/* The borders and styles */
+section {
+    border-style : outset;
+    border-width : 3px;
+    border-color : white;
+}
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
