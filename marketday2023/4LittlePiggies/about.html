@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>4 Little Piggies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- adds icons websie -->
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img alt="" src="img/piglogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!-- adds x icon, when we click on close icon it will call hideMenu -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!--<li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>-->
+                    <li><a href="contact.html">Find us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <!-- adds menu icon, when we click it will call showMenu  -->
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!-- about us content -->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>Who are we?</h1>
+            <p>The members of our group are Renee Keall, Kate Simpson, Nina Ross and Saffanah Rahman. We are Year 10s who are doing market day this year in Economics. We want to make a quality product that we can be proud of and we want every customer to leave our stall, satisfied with their purchase.</p>
+            <a href="index.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img alt="" src="img/group_photo.png">
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+    
+<!-- Footer -->
+<section class="footer">
+    <h4>About the website</h4>
+    <p>This websites purpose is to advertise and give information about the <br>product "Pigs in a pen" made by 4 Little Piggies</p>
+    <p>Created by Katherine Ng</p>
+</section>
+
+
+    <!-- JavaScript for Toggle Menu -->
+    <script> /* Makes the icons work ie. close and open */
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

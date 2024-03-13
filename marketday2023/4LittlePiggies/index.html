@@ -1,0 +1,144 @@
+<!--
+Credits to GreatStack = https://www.youtube.com/watch?v=oYRda7UtuhA&t=2101s
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>4 Little Piggies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- adds icons websie -->
+    <link href="https://db.onlinewebfonts.com/c/35e23faf72946beaae07e9f37976f728?family=Purisa" rel="stylesheet">
+</head>
+
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img alt="" src="img/piglogo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i> <!-- adds x icon, when we click on close icon it will call hideMenu -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!--<li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>-->
+                <li><a href="contact.html">Find us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> <!-- adds menu icon, when we click it will call showMenu  -->
+    </nav>
+
+<div class="text-box" style = "position: relative; top: 70px;">
+    <h1 class="anim">4 Little Piggies</h1>
+    <p class="anim">We are so excited to present you <br>Pigs in a Pen <br>for Wellington Girls Colleges Annual Market Day on the 15th of September</p>
+    <a href="https://www.instagram.com/4.little_piggies/?next=%2F" class="hero-btn anim">Preorder now</a>
+</div>
+        
+</section>
+
+<!-- Course -->
+
+<section class="course">
+    <h1>Our Product</h1>
+    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+
+    <div class="row_product">
+        <div class="course-col">
+            <h3>Pigs in a Pen</h3>
+            <img alt="" src="img/product_photo1.png">
+            <p>Our product is a delicious sausage wrapped in pastry, with the features of a pig. It's a twist on the classic sausage roll we all know and love. It tastes delicious, and you can have tomato sauce added! There is also a vegetarian option, with a vegetarian sausage. They come in boxes made to look like pigs in pens for pizazz. </p>
+        </div>
+    </div>
+    
+</section>
+
+<!-- Price -->
+<div class="price">
+    <div class="container">
+        <h2>Price</h2>
+        <div class="price-list">
+            <div>
+                <img alt="" src="img/pig.png"> <!-- Credits to flaticon -->
+                <p>Just a pig for only $1.50</p>
+            </div>
+            <div>
+                <img alt="" src="img/pig.png"> <!-- Credits to flaticon -->
+                <img alt="" src="img/pig.png"> <!-- Credits to flaticon -->
+                <p>Pair of pigs for only $2.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<!-- Ingredients -->
+    
+<section class="ingredients">
+    <h2>What's inside?</h2>
+    <p>The ingredients to make delicious Pigs in a Pen</p>
+
+    <div class="row">
+        <div class="ingredients-col">
+            <img alt="" src="img/puff_pastry.png">
+            <div class="layer">
+                <h3>Puff Pastry</h3>
+            </div>
+        </div>
+        <div class="ingredients-col">
+            <img alt="" src="img/sausages.png">
+            <div class="layer">
+                <h3>Sausages</h3>
+            </div>
+        </div>
+        <div class="ingredients-col">
+            <img alt="" src="img/tomato.png">
+            <div class="layer">
+                <h3>Tomato sauce</h3>
+            </div>
+        </div>
+    </div>        
+    
+</section>
+
+
+<!-- Questions -->
+
+<section class="questions">
+    <h5>Any questions or comments</h5>
+    <a href="https://www.instagram.com/4.little_piggies/?next=%2F" class="hero-btn">CONTACT US</a>
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About the website</h4>
+    <p>This websites purpose is to advertise and give information about the <br>product "Pigs in a pen" made by 4 Little Piggies</p>
+    <p>Created by Katherine Ng</p>
+</section>
+
+    
+<!--JavaScript for Toggle Me -->
+<script> /* Makes the icons work ie. close and open */
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+    
+</body>
+</html>
+
+
+
+
+
+
