@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.navb{
+  display: flex;
+  flex: 12px;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav{
+  display: flex;
+  padding-right: 15px;
+  margin: 15px;
+  color: #303c91;
+  text-decoration: none;
+  background-color: #ffffff;
+  font-family: raleway;
+  width: 20%;
+  height: 70%;
+}
+.nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+}
+.nav li{
+  margin: 10px;
+}
+.nav li a{
+  display: block;
+  color: #04044e;
+  text-decoration: none;
+  justify-content: center;
+}
+.nav li a :hover{
+  background-color: #ffffff;
+}
+.para{
+  display: flex;
+  padding: 15px;
+  margin: 15px;
+  color: #152c60;
+  background-color: #ffffff;
+  font-family: Raleway;
+  width: 80%;
+}
+.nav .para{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 15px;
+  color: #ffffff;
+  background-color: #af1212;
+  font-family: alfa slab one;
+  border-color: white;
+  border-style: double;
+}
+article{
+  border-style: double;
+  border-color: white;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.image{
+  padding: 5px;
+}
+body{
+  display: flex;
+  background-color: #091b53;
+}
+#paraleft{
+  display: flex;
+  padding: 15px;
+  margin: 15px;
+  color: #28155b;
+  background-color: #ffffff;
+  font-family: Raleway;
+  width: 80%;
+  flex-direction: column;
+  text-align: center;
+}
+#paraind{
+  display: flex;
+  padding: 15px;
+  margin: 15px;
+  color: #ffffff;
+  font-family: Raleway;
+  width: 80%;
+  flex-direction: column;
+  text-align: center;
+  background-color: #af1212;
+  border-color: white;
+  border-style: double;
+}
+img{
+  width: 50%;
+  text-align: center;
+}
+#imagepage2{
+  display: flex;
+  width: 66.5%;
+  flex-direction: row;
+}
