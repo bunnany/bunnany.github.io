@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Market Day</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+       <div class="top">
+           <img class="logo" src="img/logo.png" alt="logo Credit: Team Dessertos">
+           <a href="index.html"><h1>Dessertos</h1></a>
+       </div>
+        <nav class="navbar">
+            <a href="index.html"><p>Home</p></a>
+            <a href="menu.html"><p>Menu</p></a>
+            <a href="https://forms.gle/1g6kiZKz3vkbdmQS9"><p>Pre-Order</p></a>  
+            <a href="location.html"><p>D-Day</p></a>
+            <a href="https://www.instagram.com/dessertos.wgc/"><p>Contact Us</p></a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="indexcontent">
+            <h2>Market Day Countdown</h2>
+            <p id="indexcountdown"></p>
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Sep 15, 2023 12:45:00").getTime();
+                
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+                
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                    
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                    
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  // Output the result in an element with id="countdown"
+                  document.getElementById("indexcountdown").innerHTML = days + "day(s) " + hours + "hr(s) "
+                  + minutes + "min(s) " + seconds + "sec(s) ";
+                    
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("indexcountdown").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script>
+            <div class="indeximg">
+                <div class="column">
+                    <a href="menu.html"><img src="img/index1.jpg" alt="Caramel ice cream topped with chocolate sauce and pretzels in a glass mug Credit: pexels.com"></a>
+                </div>
+                <div class="column">
+                    <a href="menu.html"><img src="img/index2.jpg" alt="Vanilla ice cream topped with chocolate, chocolate sauce and pretzels in a glass dessert cup Credit:pexels.com"></a>
+                </div>
+            </div>
+            <section class="aboutus">
+                <h2>ABOUT US</h2>
+                    <p>Our mission is to make a delicious treat by combining two worlds together! Tacos are a fan favourite and a dessert is everyone’s favourite treat. We are committed to creating a unique range of flavours that everyone will love!
+    </p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,249 @@
+/*NAV*/
+nav {
+  /*position*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  /*size*/
+  width: 100%;
+  height: 140px;
+  /*colour*/
+  background-color: #222e50;
+  border-bottom: solid;
+  border-bottom-color: #1a2238;
+  border-bottom-width: 5px;
+}
+
+/*Logo Section*/
+
+/*container*/
+.logo {
+  /*position*/
+  display: flex;
+  justify-content: space-evenly;
+  /*size*/
+  width: 35%;
+  height: 140px;
+}
+
+/*image*/
+.logo img {
+  max-height: 135px;
+}
+
+/*text*/
+.logo h1 {
+  /*position*/
+  display: flex;
+  align-self: center;
+  /*size*/
+  width: 250px;
+  margin: 10px;
+  /*text*/
+  text-align: center;
+  font-size: 45px;
+  color: #e8eef2;
+}
+
+/*logo & button divider*/
+.divider {
+  /*size*/
+  width: 3px;
+  height: 100px;
+  /*color*/
+  background-color: #e8eef2;
+  margin-right: 15px;
+}
+
+/*Buttons*/
+
+/*container*/
+.nav-buttons {
+  /*position*/
+  display: flex;
+  align-items: center;
+  /*size*/
+  width: 100%;
+  height: 140px;
+}
+
+/*buttons*/
+.nav-buttons li {
+  /*position*/
+  display: inline-block;
+  /*size*/
+  width: 260px;
+  height: 50px;
+  margin: 25px;
+  /*text*/
+  overflow: hidden;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  /*colour*/
+  background-color: #e8eef2;
+  border: solid;
+  border-color: #1a2238;
+  border-width: 5px;
+  /*animation*/
+  transition: width 0.5s;
+}
+
+nav a {
+  /*same size as button*/
+  height: 50px;
+}
+
+/*hover animation*/
+.nav-buttons li:hover {
+  /*size*/
+  width: 280px;
+  /*colour*/
+  background-color: white;
+  border-bottom-color: white;
+  border-top-color: white;
+}
+
+
+
+/*FOOTER*/
+footer {
+  /*position*/
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /*size*/
+  height: 40px;
+  width: 100%;
+  /*text*/
+  font-size: 16px;
+  color: black;
+  padding-left: 10px;
+}
+
+
+
+/*BODY*/
+
+/*body, not homepage| https://www.w3schools.com/cssref/sel_not.php*/
+body:not(.homepage) {
+  /*position*/
+  margin: 0 auto;
+  max-width: 960px;
+  /*colour*/
+  background-color: #e8eef2;
+  /*default font size*/
+  font-size: 28px;
+}
+
+/*links*/
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/*font families*/
+h1,
+h2 {
+  font-family: 'Unbounded', sans-serif;
+}
+
+p,
+.nav-buttons li {
+  font-family: 'Ysabeau Office', sans-serif;
+}
+
+/*Main*/
+main {
+  margin-top: 140px;
+  overflow-x: hidden;
+}
+
+/*main images, not homepage or Insta logo*/
+main div img:not(.title-img):not(#instagram-icon) {
+  /*size (filling all photos to 960 including border*/
+  width: 954px;
+  margin-top: 50px;
+  /*border*/
+  border: solid;
+  border-width: 3px;
+  border-color: #222e50;
+}
+
+
+
+/*Home Page*/
+
+/*container*/
+.title {
+  /*position*/
+  position: absolute;
+  top: 140px;
+  left: 0px;
+  /*size*/
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  /*border*/
+  border-bottom: solid;
+  border-bottom-color: #1a2238;
+}
+
+/*image*/
+.title-img {
+  position: relative;
+  bottom: 50%;
+}
+
+/*price box*/
+#Prices {
+  position: absolute;
+  color: #222e50;
+  top: 50px;
+  right: 100px;
+  z-index: 200;
+  /*size*/
+  width: 550px;
+  height: 350px;
+  /*text*/
+  font-size: 36px;
+  padding: 10px;
+  padding-bottom: 50px;
+  /*colour*/
+  background-color: rgba(232, 238, 234, 0.5);
+}
+
+
+
+/*OTHER PAGES*/
+
+/*text sections*/
+section {
+  /*position*/
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  /*border*/
+  border-bottom: solid;
+  border-bottom-width: 10px;
+  border-bottom-color: #5271ff;
+  /*colour + text*/
+  background-color: white;
+  text-align: center;
+}
+
+/*Text Section Divider*/
+.divider-type-2 {
+  /*posistion*/
+  margin: auto;
+  /*size*/
+  height: 3px;
+  width: 50px;
+  /*colour*/
+  background-color: #222e50;
+}

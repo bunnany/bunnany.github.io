@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bagel Fat One', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(223, 128, 177, 0.44),rgba(226, 118, 174, 0.91)), url(img/fries.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffbd59;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20PX;
+    color: #fff;
+    font-family: 'Rakkas', cursive;
+}
+.text-box ul li{
+    font-size: 20PX;
+    color: #fff;
+    font-family: 'Rakkas', cursive;
+}
+
+article{
+    margin-bottom: 100px;
+    margin-left: 150px;
+    padding: 20px;
+    width: 70%;
+
+
+    border-style: ridge;
+    border-color: #4acd00;
+    border-width: 5px;
+}
+
+@media(max-width: 700px){
+    .text-box p{
+        font-size: 15px;  
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #ffbd59;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+  
+}
